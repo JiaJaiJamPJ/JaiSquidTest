@@ -1,0 +1,13 @@
+ticket.png
+size:254,254
+filter:Linear,Linear
+pma:true
+Shadow
+bounds:2,122,174,130
+offsets:1,4,175,134
+Star
+bounds:163,50,29,29
+light
+bounds:178,81,69,171
+ticket
+bounds:2,2,159,118
