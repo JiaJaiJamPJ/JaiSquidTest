@@ -1,0 +1,15 @@
+fg-ticket.png
+size:720,720
+filter:Linear,Linear
+pma:true
+scale:0.5
+Main
+bounds:364,377,271,157
+Main-W
+bounds:364,536,296,182
+light_blue_01
+bounds:2,362,360,356
+light_blue_02
+bounds:2,4,360,356
+star
+bounds:662,663,56,55
