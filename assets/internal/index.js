@@ -1,10 +1,2235 @@
-System.register("chunks:///_virtual/builtin-pipeline-settings.ts",["./rollupPluginModLoBabelHelpers.js","cc","./builtin-pipeline-types.ts"],(function(t){var e,o,i,n,r,s,a,p,l,g,c,y,u,d,b,m,h,f,_;return{setters:[function(t){e=t.applyDecoratedDescriptor,o=t.inherits,i=t.createSuper,n=t.classCallCheck,r=t.initializerDefineProperty,s=t.assertThisInitialized,a=t.createClass},function(t){p=t.cclegacy,l=t._decorator,g=t.Camera,c=t.CCBoolean,y=t.CCInteger,u=t.CCFloat,d=t.Material,b=t.Texture2D,m=t.rendering,h=t.Component},function(t){f=t.fillRequiredPipelineSettings,_=t.makePipelineSettings}],execute:function(){var P,M,S,O,w,k,E,G,C,D,v,A,j,x,F,B,R,I,T,L,X,z,H,q,Y,N,Q,Z;p._RF.push({},"de1c2EHcMhAIYRZY5nyTQHG","builtin-pipeline-settings",void 0);var J=l.ccclass,K=l.disallowMultiple,U=l.executeInEditMode,V=l.menu,W=l.property,$=l.requireComponent;l.type,t("BuiltinPipelineSettings",(P=J("BuiltinPipelineSettings"),M=V("Rendering/BuiltinPipelineSettings"),S=$(g),O=W(c),w=W({displayName:"Editor Preview (Experimental)",type:c}),k=W({group:{id:"MSAA",name:"Multisample Anti-Aliasing"},type:c}),E=W({group:{id:"MSAA",name:"Multisample Anti-Aliasing",style:"section"},type:y,range:[2,4,2]}),G=W({group:{id:"ShadingScale",name:"ShadingScale",style:"section"},type:c}),C=W({tooltip:"i18n:postprocess.shadingScale",group:{id:"ShadingScale",name:"ShadingScale"},type:u,range:[.01,4,.01],slide:!0}),D=W({group:{id:"Bloom",name:"Bloom (PostProcessing)",style:"section"},type:c}),v=W({group:{id:"Bloom",name:"Bloom (PostProcessing)",style:"section"},type:d}),A=W({tooltip:"i18n:bloom.enableAlphaMask",group:{id:"Bloom",name:"Bloom (PostProcessing)",style:"section"},type:c}),j=W({tooltip:"i18n:bloom.iterations",group:{id:"Bloom",name:"Bloom (PostProcessing)",style:"section"},type:y,range:[1,6,1],slide:!0}),x=W({tooltip:"i18n:bloom.threshold",group:{id:"Bloom",name:"Bloom (PostProcessing)",style:"section"},type:u,min:0}),F=W({group:{id:"Color Grading",name:"ColorGrading (LDR) (PostProcessing)",style:"section"},type:c}),B=W({group:{id:"Color Grading",name:"ColorGrading (LDR) (PostProcessing)",style:"section"},type:d}),R=W({tooltip:"i18n:color_grading.contribute",group:{id:"Color Grading",name:"ColorGrading (LDR) (PostProcessing)",style:"section"},type:u,range:[0,1,.01],slide:!0}),I=W({tooltip:"i18n:color_grading.originalMap",group:{id:"Color Grading",name:"ColorGrading (LDR) (PostProcessing)",style:"section"},type:b}),T=W({group:{id:"FXAA",name:"Fast Approximate Anti-Aliasing (PostProcessing)",style:"section"},type:c}),L=W({group:{id:"FXAA",name:"Fast Approximate Anti-Aliasing (PostProcessing)",style:"section"},type:d}),X=W({group:{id:"FSR",name:"FidelityFX Super Resolution",style:"section"},type:c}),z=W({group:{id:"FSR",name:"FidelityFX Super Resolution",style:"section"},type:d}),H=W({group:{id:"FSR",name:"FidelityFX Super Resolution",style:"section"},type:u,range:[0,1,.01],slide:!0}),q=W({group:{id:"ToneMapping",name:"ToneMapping",style:"section"},type:d}),P(Y=M(Y=S(Y=K(Y=U((Q=e((N=function(t){o(p,t);var e=i(p);function p(){var t;n(this,p);for(var o=arguments.length,i=new Array(o),a=0;a<o;a++)i[a]=arguments[a];return t=e.call.apply(e,[this].concat(i)),r(s(t),"_settings",Q,s(t)),r(s(t),"_editorPreview",Z,s(t)),t}return a(p,[{key:"getPipelineSettings",value:function(){return this._settings}},{key:"onEnable",value:function(){f(this._settings),this.getComponent(g).camera.pipelineSettings=this._settings}},{key:"onDisable",value:function(){this.getComponent(g).camera.pipelineSettings=null}},{key:"editorPreview",get:function(){return this._editorPreview},set:function(t){this._editorPreview=t}},{key:"_tryEnableEditorPreview",value:function(){void 0!==m&&(this._editorPreview?m.setEditorPipelineSettings(this._settings):this._disableEditorPreview())}},{key:"_disableEditorPreview",value:function(){void 0!==m&&(m.getEditorPipelineSettings()===this._settings&&m.setEditorPipelineSettings(null))}},{key:"MsaaEnable",get:function(){return this._settings.msaa.enabled},set:function(t){this._settings.msaa.enabled=t}},{key:"msaaSampleCount",get:function(){return this._settings.msaa.sampleCount},set:function(t){t=Math.pow(2,Math.ceil(Math.log2(Math.max(t,2)))),t=Math.min(t,4),this._settings.msaa.sampleCount=t}},{key:"shadingScaleEnable",get:function(){return this._settings.enableShadingScale},set:function(t){this._settings.enableShadingScale=t}},{key:"shadingScale",get:function(){return this._settings.shadingScale},set:function(t){this._settings.shadingScale=t}},{key:"bloomEnable",get:function(){return this._settings.bloom.enabled},set:function(t){this._settings.bloom.enabled=t}},{key:"bloomMaterial",get:function(){return this._settings.bloom.material},set:function(t){this._settings.bloom.material!==t&&(this._settings.bloom.material=t)}},{key:"bloomEnableAlphaMask",get:function(){return this._settings.bloom.enableAlphaMask},set:function(t){this._settings.bloom.enableAlphaMask=t}},{key:"bloomIterations",get:function(){return this._settings.bloom.iterations},set:function(t){this._settings.bloom.iterations=t}},{key:"bloomThreshold",get:function(){return this._settings.bloom.threshold},set:function(t){this._settings.bloom.threshold=t}},{key:"bloomIntensity",get:function(){return this._settings.bloom.intensity},set:function(t){this._settings.bloom.intensity=t}},{key:"colorGradingEnable",get:function(){return this._settings.colorGrading.enabled},set:function(t){this._settings.colorGrading.enabled=t}},{key:"colorGradingMaterial",get:function(){return this._settings.colorGrading.material},set:function(t){this._settings.colorGrading.material!==t&&(this._settings.colorGrading.material=t)}},{key:"colorGradingContribute",get:function(){return this._settings.colorGrading.contribute},set:function(t){this._settings.colorGrading.contribute=t}},{key:"colorGradingMap",get:function(){return this._settings.colorGrading.colorGradingMap},set:function(t){this._settings.colorGrading.colorGradingMap=t}},{key:"fxaaEnable",get:function(){return this._settings.fxaa.enabled},set:function(t){this._settings.fxaa.enabled=t}},{key:"fxaaMaterial",get:function(){return this._settings.fxaa.material},set:function(t){this._settings.fxaa.material!==t&&(this._settings.fxaa.material=t)}},{key:"fsrEnable",get:function(){return this._settings.fsr.enabled},set:function(t){this._settings.fsr.enabled=t}},{key:"fsrMaterial",get:function(){return this._settings.fsr.material},set:function(t){this._settings.fsr.material!==t&&(this._settings.fsr.material=t)}},{key:"fsrSharpness",get:function(){return this._settings.fsr.sharpness},set:function(t){this._settings.fsr.sharpness=t}},{key:"toneMappingMaterial",get:function(){return this._settings.toneMapping.material},set:function(t){this._settings.toneMapping.material!==t&&(this._settings.toneMapping.material=t)}}]),p}(h)).prototype,"_settings",[W],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return _()}}),Z=e(N.prototype,"_editorPreview",[O],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return!1}}),e(N.prototype,"editorPreview",[w],Object.getOwnPropertyDescriptor(N.prototype,"editorPreview"),N.prototype),e(N.prototype,"MsaaEnable",[k],Object.getOwnPropertyDescriptor(N.prototype,"MsaaEnable"),N.prototype),e(N.prototype,"msaaSampleCount",[E],Object.getOwnPropertyDescriptor(N.prototype,"msaaSampleCount"),N.prototype),e(N.prototype,"shadingScaleEnable",[G],Object.getOwnPropertyDescriptor(N.prototype,"shadingScaleEnable"),N.prototype),e(N.prototype,"shadingScale",[C],Object.getOwnPropertyDescriptor(N.prototype,"shadingScale"),N.prototype),e(N.prototype,"bloomEnable",[D],Object.getOwnPropertyDescriptor(N.prototype,"bloomEnable"),N.prototype),e(N.prototype,"bloomMaterial",[v],Object.getOwnPropertyDescriptor(N.prototype,"bloomMaterial"),N.prototype),e(N.prototype,"bloomEnableAlphaMask",[A],Object.getOwnPropertyDescriptor(N.prototype,"bloomEnableAlphaMask"),N.prototype),e(N.prototype,"bloomIterations",[j],Object.getOwnPropertyDescriptor(N.prototype,"bloomIterations"),N.prototype),e(N.prototype,"bloomThreshold",[x],Object.getOwnPropertyDescriptor(N.prototype,"bloomThreshold"),N.prototype),e(N.prototype,"colorGradingEnable",[F],Object.getOwnPropertyDescriptor(N.prototype,"colorGradingEnable"),N.prototype),e(N.prototype,"colorGradingMaterial",[B],Object.getOwnPropertyDescriptor(N.prototype,"colorGradingMaterial"),N.prototype),e(N.prototype,"colorGradingContribute",[R],Object.getOwnPropertyDescriptor(N.prototype,"colorGradingContribute"),N.prototype),e(N.prototype,"colorGradingMap",[I],Object.getOwnPropertyDescriptor(N.prototype,"colorGradingMap"),N.prototype),e(N.prototype,"fxaaEnable",[T],Object.getOwnPropertyDescriptor(N.prototype,"fxaaEnable"),N.prototype),e(N.prototype,"fxaaMaterial",[L],Object.getOwnPropertyDescriptor(N.prototype,"fxaaMaterial"),N.prototype),e(N.prototype,"fsrEnable",[X],Object.getOwnPropertyDescriptor(N.prototype,"fsrEnable"),N.prototype),e(N.prototype,"fsrMaterial",[z],Object.getOwnPropertyDescriptor(N.prototype,"fsrMaterial"),N.prototype),e(N.prototype,"fsrSharpness",[H],Object.getOwnPropertyDescriptor(N.prototype,"fsrSharpness"),N.prototype),e(N.prototype,"toneMappingMaterial",[q],Object.getOwnPropertyDescriptor(N.prototype,"toneMappingMaterial"),N.prototype),Y=N))||Y)||Y)||Y)||Y)||Y));p._RF.pop()}}}));
+System.register("chunks:///_virtual/builtin-pipeline-settings.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './builtin-pipeline-types.ts'], function (exports) {
+  var _applyDecoratedDescriptor, _inherits, _createSuper, _classCallCheck, _initializerDefineProperty, _assertThisInitialized, _createClass, cclegacy, _decorator, Camera, CCBoolean, CCInteger, CCFloat, Material, Texture2D, rendering, Component, fillRequiredPipelineSettings, makePipelineSettings;
+  return {
+    setters: [function (module) {
+      _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
+      _inherits = module.inherits;
+      _createSuper = module.createSuper;
+      _classCallCheck = module.classCallCheck;
+      _initializerDefineProperty = module.initializerDefineProperty;
+      _assertThisInitialized = module.assertThisInitialized;
+      _createClass = module.createClass;
+    }, function (module) {
+      cclegacy = module.cclegacy;
+      _decorator = module._decorator;
+      Camera = module.Camera;
+      CCBoolean = module.CCBoolean;
+      CCInteger = module.CCInteger;
+      CCFloat = module.CCFloat;
+      Material = module.Material;
+      Texture2D = module.Texture2D;
+      rendering = module.rendering;
+      Component = module.Component;
+    }, function (module) {
+      fillRequiredPipelineSettings = module.fillRequiredPipelineSettings;
+      makePipelineSettings = module.makePipelineSettings;
+    }],
+    execute: function () {
+      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _class, _class2, _descriptor, _descriptor2;
+      cclegacy._RF.push({}, "de1c2EHcMhAIYRZY5nyTQHG", "builtin-pipeline-settings", undefined);
+      var ccclass = _decorator.ccclass,
+        disallowMultiple = _decorator.disallowMultiple,
+        executeInEditMode = _decorator.executeInEditMode,
+        menu = _decorator.menu,
+        property = _decorator.property,
+        requireComponent = _decorator.requireComponent,
+        type = _decorator.type;
+      var BuiltinPipelineSettings = exports('BuiltinPipelineSettings', (_dec = ccclass('BuiltinPipelineSettings'), _dec2 = menu('Rendering/BuiltinPipelineSettings'), _dec3 = requireComponent(Camera), _dec4 = property(CCBoolean), _dec5 = property({
+        displayName: 'Editor Preview (Experimental)',
+        type: CCBoolean
+      }), _dec6 = property({
+        group: {
+          id: 'MSAA',
+          name: 'Multisample Anti-Aliasing'
+        },
+        type: CCBoolean
+      }), _dec7 = property({
+        group: {
+          id: 'MSAA',
+          name: 'Multisample Anti-Aliasing',
+          style: 'section'
+        },
+        type: CCInteger,
+        range: [2, 4, 2]
+      }), _dec8 = property({
+        group: {
+          id: 'ShadingScale',
+          name: 'ShadingScale',
+          style: 'section'
+        },
+        type: CCBoolean
+      }), _dec9 = property({
+        tooltip: 'i18n:postprocess.shadingScale',
+        group: {
+          id: 'ShadingScale',
+          name: 'ShadingScale'
+        },
+        type: CCFloat,
+        range: [0.01, 4, 0.01],
+        slide: true
+      }), _dec10 = property({
+        group: {
+          id: 'Bloom',
+          name: 'Bloom (PostProcessing)',
+          style: 'section'
+        },
+        type: CCBoolean
+      }), _dec11 = property({
+        group: {
+          id: 'Bloom',
+          name: 'Bloom (PostProcessing)',
+          style: 'section'
+        },
+        type: Material
+      }), _dec12 = property({
+        tooltip: 'i18n:bloom.enableAlphaMask',
+        group: {
+          id: 'Bloom',
+          name: 'Bloom (PostProcessing)',
+          style: 'section'
+        },
+        type: CCBoolean
+      }), _dec13 = property({
+        tooltip: 'i18n:bloom.iterations',
+        group: {
+          id: 'Bloom',
+          name: 'Bloom (PostProcessing)',
+          style: 'section'
+        },
+        type: CCInteger,
+        range: [1, 6, 1],
+        slide: true
+      }), _dec14 = property({
+        tooltip: 'i18n:bloom.threshold',
+        group: {
+          id: 'Bloom',
+          name: 'Bloom (PostProcessing)',
+          style: 'section'
+        },
+        type: CCFloat,
+        min: 0
+      }), _dec15 = property({
+        group: {
+          id: 'Color Grading',
+          name: 'ColorGrading (LDR) (PostProcessing)',
+          style: 'section'
+        },
+        type: CCBoolean
+      }), _dec16 = property({
+        group: {
+          id: 'Color Grading',
+          name: 'ColorGrading (LDR) (PostProcessing)',
+          style: 'section'
+        },
+        type: Material
+      }), _dec17 = property({
+        tooltip: 'i18n:color_grading.contribute',
+        group: {
+          id: 'Color Grading',
+          name: 'ColorGrading (LDR) (PostProcessing)',
+          style: 'section'
+        },
+        type: CCFloat,
+        range: [0, 1, 0.01],
+        slide: true
+      }), _dec18 = property({
+        tooltip: 'i18n:color_grading.originalMap',
+        group: {
+          id: 'Color Grading',
+          name: 'ColorGrading (LDR) (PostProcessing)',
+          style: 'section'
+        },
+        type: Texture2D
+      }), _dec19 = property({
+        group: {
+          id: 'FXAA',
+          name: 'Fast Approximate Anti-Aliasing (PostProcessing)',
+          style: 'section'
+        },
+        type: CCBoolean
+      }), _dec20 = property({
+        group: {
+          id: 'FXAA',
+          name: 'Fast Approximate Anti-Aliasing (PostProcessing)',
+          style: 'section'
+        },
+        type: Material
+      }), _dec21 = property({
+        group: {
+          id: 'FSR',
+          name: 'FidelityFX Super Resolution',
+          style: 'section'
+        },
+        type: CCBoolean
+      }), _dec22 = property({
+        group: {
+          id: 'FSR',
+          name: 'FidelityFX Super Resolution',
+          style: 'section'
+        },
+        type: Material
+      }), _dec23 = property({
+        group: {
+          id: 'FSR',
+          name: 'FidelityFX Super Resolution',
+          style: 'section'
+        },
+        type: CCFloat,
+        range: [0, 1, 0.01],
+        slide: true
+      }), _dec24 = property({
+        group: {
+          id: 'ToneMapping',
+          name: 'ToneMapping',
+          style: 'section'
+        },
+        type: Material
+      }), _dec(_class = _dec2(_class = _dec3(_class = disallowMultiple(_class = executeInEditMode(_class = (_class2 = /*#__PURE__*/function (_Component) {
+        _inherits(BuiltinPipelineSettings, _Component);
+        var _super = _createSuper(BuiltinPipelineSettings);
+        function BuiltinPipelineSettings() {
+          var _this;
+          _classCallCheck(this, BuiltinPipelineSettings);
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+          _this = _super.call.apply(_super, [this].concat(args));
+          _initializerDefineProperty(_assertThisInitialized(_this), "_settings", _descriptor, _assertThisInitialized(_this));
+          // Editor Preview
+          _initializerDefineProperty(_assertThisInitialized(_this), "_editorPreview", _descriptor2, _assertThisInitialized(_this));
+          return _this;
+        }
+        _createClass(BuiltinPipelineSettings, [{
+          key: "getPipelineSettings",
+          value: function getPipelineSettings() {
+            return this._settings;
+          }
 
-System.register("chunks:///_virtual/builtin-pipeline-types.ts",["cc"],(function(e){var a,n;return{setters:[function(e){a=e.cclegacy,n=e.gfx}],execute:function(){e({fillRequiredBloom:o,fillRequiredColorGrading:u,fillRequiredFSR:c,fillRequiredFXAA:m,fillRequiredHBAO:function(e){void 0===e.enabled&&(e.enabled=!1);void 0===e.radiusScale&&(e.radiusScale=1);void 0===e.angleBiasDegree&&(e.angleBiasDegree=10);void 0===e.blurSharpness&&(e.blurSharpness=3);void 0===e.aoSaturation&&(e.aoSaturation=1);void 0===e.needBlur&&(e.needBlur=!1)},fillRequiredMSAA:r,fillRequiredPipelineSettings:function(e){e.msaa?r(e.msaa):e.msaa=i();void 0===e.enableShadingScale&&(e.enableShadingScale=!1);void 0===e.shadingScale&&(e.shadingScale=.5);e.bloom?o(e.bloom):e.bloom={enabled:!1,material:null,enableAlphaMask:!1,iterations:3,threshold:.8,intensity:2.3};e.toneMapping?f(e.toneMapping):e.toneMapping={material:null};e.colorGrading?u(e.colorGrading):e.colorGrading={enabled:!1,material:null,contribute:1,colorGradingMap:null};e.fsr?c(e.fsr):e.fsr={enabled:!1,material:null,sharpness:.8};e.fxaa?m(e.fxaa):e.fxaa={enabled:!1,material:null}},fillRequiredToneMapping:f,makeBloom:t,makeColorGrading:d,makeFSR:s,makeFXAA:b,makeHBAO:function(){return{enabled:!1,radiusScale:1,angleBiasDegree:10,blurSharpness:3,aoSaturation:1,needBlur:!1}},makeMSAA:i,makePipelineSettings:function(){return{msaa:i(),enableShadingScale:!1,shadingScale:.5,bloom:{enabled:!1,material:null,enableAlphaMask:!1,iterations:3,threshold:.8,intensity:2.3},toneMapping:{material:null},colorGrading:{enabled:!1,material:null,contribute:1,colorGradingMap:null},fsr:{enabled:!1,material:null,sharpness:.8},fxaa:{enabled:!1,material:null}}},makeToneMapping:p}),a._RF.push({},"cbf30kCUX9A3K+QpVC6wnzx","builtin-pipeline-types",void 0);var l=n.SampleCount;function i(){return{enabled:!1,sampleCount:l.X4}}function r(e){void 0===e.enabled&&(e.enabled=!1),void 0===e.sampleCount&&(e.sampleCount=l.X4)}function t(){return{enabled:!1,material:null,enableAlphaMask:!1,iterations:3,threshold:.8,intensity:2.3}}function o(e){void 0===e.enabled&&(e.enabled=!1),void 0===e.material&&(e.material=null),void 0===e.enableAlphaMask&&(e.enableAlphaMask=!1),void 0===e.iterations&&(e.iterations=3),void 0===e.threshold&&(e.threshold=.8),void 0===e.intensity&&(e.intensity=2.3)}function d(){return{enabled:!1,material:null,contribute:1,colorGradingMap:null}}function u(e){void 0===e.enabled&&(e.enabled=!1),void 0===e.material&&(e.material=null),void 0===e.contribute&&(e.contribute=1),void 0===e.colorGradingMap&&(e.colorGradingMap=null)}function s(){return{enabled:!1,material:null,sharpness:.8}}function c(e){void 0===e.enabled&&(e.enabled=!1),void 0===e.material&&(e.material=null),void 0===e.sharpness&&(e.sharpness=.8)}function b(){return{enabled:!1,material:null}}function m(e){void 0===e.enabled&&(e.enabled=!1),void 0===e.material&&(e.material=null)}function p(){return{material:null}}function f(e){void 0===e.material&&(e.material=null)}a._RF.pop()}}}));
+          // Enable/Disable
+        }, {
+          key: "onEnable",
+          value: function onEnable() {
+            fillRequiredPipelineSettings(this._settings);
+            var cameraComponent = this.getComponent(Camera);
+            var camera = cameraComponent.camera;
+            camera.pipelineSettings = this._settings;
+          }
+        }, {
+          key: "onDisable",
+          value: function onDisable() {
+            var cameraComponent = this.getComponent(Camera);
+            var camera = cameraComponent.camera;
+            camera.pipelineSettings = null;
+          }
+        }, {
+          key: "editorPreview",
+          get: function get() {
+            return this._editorPreview;
+          },
+          set: function set(v) {
+            this._editorPreview = v;
+          }
+        }, {
+          key: "_tryEnableEditorPreview",
+          value: function _tryEnableEditorPreview() {
+            if (rendering === undefined) {
+              return;
+            }
+            if (this._editorPreview) {
+              rendering.setEditorPipelineSettings(this._settings);
+            } else {
+              this._disableEditorPreview();
+            }
+          }
+        }, {
+          key: "_disableEditorPreview",
+          value: function _disableEditorPreview() {
+            if (rendering === undefined) {
+              return;
+            }
+            var current = rendering.getEditorPipelineSettings();
+            if (current === this._settings) {
+              rendering.setEditorPipelineSettings(null);
+            }
+          }
 
-System.register("chunks:///_virtual/builtin-pipeline.ts",["./rollupPluginModLoBabelHelpers.js","cc","./env","./builtin-pipeline-types.ts"],(function(e){var a,t,i,n,r,s,o,d,l,h,c,u,g,p,m,S,f,_,w,b,P;return{setters:[function(e){a=e.createClass,t=e.classCallCheck,i=e.defineProperty,n=e.createForOfIteratorHelper},function(e){r=e.cclegacy,s=e.geometry,o=e.gfx,d=e.renderer,l=e.rendering,h=e.Vec2,c=e.Vec4,u=e.Vec3,g=e.assert,p=e.clamp,m=e.Layers,S=e.PipelineEventType,f=e.sys,_=e.pipeline,w=e.Material},function(e){e.EDITOR,b=e.DEBUG},function(e){P=e.makePipelineSettings}],execute:function(){e("getPingPongRenderTarget",V),r._RF.push({},"ff9b0GZzgRM/obMbHGfCNbk","builtin-pipeline",void 0);var v=s.AABB,R=s.Sphere,T=s.intersect,M=o.ClearFlagBit,E=o.Color,C=o.Format,A=o.FormatFeatureBit,L=o.LoadOp,x=o.StoreOp,y=o.TextureType,D=o.Viewport,F=d.scene,N=F.CameraUsage,O=F.CSMLevel,B=F.LightType;function Q(e){return!!(e.clearFlag&(M.COLOR|M.STENCIL<<1))}function k(e,a,t,i,n,r){e.shadowFixedArea||e.csmLevel===O.LEVEL_1?(n.left=0,n.top=0,n.width=Math.trunc(a),n.height=Math.trunc(t)):(n.left=Math.trunc(i%2*.5*a),n.top=r>0?Math.trunc(.5*(1-Math.floor(i/2))*t):Math.trunc(.5*Math.floor(i/2)*t),n.width=Math.trunc(.5*a),n.height=Math.trunc(.5*t)),n.left=Math.max(0,n.left),n.top=Math.max(0,n.top),n.width=Math.max(1,n.width),n.height=Math.max(1,n.height)}var H=e("PipelineConfigs",a((function e(){t(this,e),i(this,"isWeb",!1),i(this,"isWebGL1",!1),i(this,"isWebGPU",!1),i(this,"isMobile",!1),i(this,"isHDR",!1),i(this,"useFloatOutput",!1),i(this,"toneMappingType",0),i(this,"shadowEnabled",!1),i(this,"shadowMapFormat",C.R32F),i(this,"shadowMapSize",new h(1,1)),i(this,"usePlanarShadow",!1),i(this,"screenSpaceSignY",1),i(this,"supportDepthSample",!1),i(this,"mobileMaxSpotLightShadowMaps",1),i(this,"platform",new c(0,0,0,0))})));function z(e,a){var t=A.SAMPLED_TEXTURE|A.LINEAR_FILTER,i=e.device;a.isWeb=!f.isNative,a.isWebGL1=i.gfxAPI===o.API.WEBGL,a.isWebGPU=i.gfxAPI===o.API.WEBGPU,a.isMobile=f.isMobile,a.isHDR=e.pipelineSceneData.isHDR,a.useFloatOutput=e.getMacroBool("CC_USE_FLOAT_OUTPUT"),a.toneMappingType=e.pipelineSceneData.postSettings.toneMappingType;var n=e.pipelineSceneData.shadows;a.shadowEnabled=n.enabled,a.shadowMapFormat=_.supportsR32FloatTexture(e.device)?C.R32F:C.RGBA8,a.shadowMapSize.set(n.size),a.usePlanarShadow=n.enabled&&n.type===d.scene.ShadowType.Planar,a.screenSpaceSignY=e.device.capabilities.screenSpaceSignY,a.supportDepthSample=(e.device.getFormatFeatures(C.DEPTH_STENCIL)&t)===t;var r=i.capabilities.screenSpaceSignY;a.platform.x=a.isMobile?1:0,a.platform.w=.5*r+.5<<1|.5*i.capabilities.clipSpaceSignY+.5}var I=P(),W=e("CameraConfigs",a((function e(){t(this,e),i(this,"settings",I),i(this,"isMainGameWindow",!1),i(this,"renderWindowId",0),i(this,"colorName",""),i(this,"depthStencilName",""),i(this,"enableFullPipeline",!1),i(this,"enableProfiler",!1),i(this,"remainingPasses",0),i(this,"enableShadingScale",!1),i(this,"shadingScale",1),i(this,"nativeWidth",1),i(this,"nativeHeight",1),i(this,"width",1),i(this,"height",1),i(this,"enableHDR",!1),i(this,"radianceFormat",o.Format.RGBA8),i(this,"copyAndTonemapMaterial",null),i(this,"enableStoreSceneDepth",!1)}))),G=new E(0,0,0,0);function U(e,a,t,i){g(!!t.copyAndTonemapMaterial);var n=e.addRenderPass(t.nativeWidth,t.nativeHeight,"cc-tone-mapping");return n.addRenderTarget(t.colorName,L.CLEAR,x.STORE,G),n.addTexture(i,"inputTexture"),n.setVec4("g_platform",a.platform),n.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(t.copyAndTonemapMaterial,1),n}function V(e,a,t){return e.startsWith(a)?"".concat(a).concat(1-Number(e.charAt(a.length)),"_").concat(t):"".concat(a,"0_").concat(t)}var Y=function(){function e(){t(this,e),i(this,"lights",[]),i(this,"shadowEnabledSpotLights",[]),i(this,"_sphere",R.create(0,0,0,1)),i(this,"_boundingBox",new v),i(this,"_rangedDirLightBoundingBox",new v(0,0,0,.5,.5,.5))}return a(e,[{key:"cullLights",value:function(e,a,t){this.lights.length=0,this.shadowEnabledSpotLights.length=0;var i,r=n(e.spotLights);try{for(r.s();!(i=r.n()).done;){var s=i.value;s.baked||(R.set(this._sphere,s.position.x,s.position.y,s.position.z,s.range),T.sphereFrustum(this._sphere,a)&&(s.shadowEnabled?this.shadowEnabledSpotLights.push(s):this.lights.push(s)))}}catch(e){r.e(e)}finally{r.f()}var o,d=n(e.sphereLights);try{for(d.s();!(o=d.n()).done;){var l=o.value;l.baked||(R.set(this._sphere,l.position.x,l.position.y,l.position.z,l.range),T.sphereFrustum(this._sphere,a)&&this.lights.push(l))}}catch(e){d.e(e)}finally{d.f()}var h,c=n(e.pointLights);try{for(c.s();!(h=c.n()).done;){var g=h.value;g.baked||(R.set(this._sphere,g.position.x,g.position.y,g.position.z,g.range),T.sphereFrustum(this._sphere,a)&&this.lights.push(g))}}catch(e){c.e(e)}finally{c.f()}var p,m=n(e.rangedDirLights);try{for(m.s();!(p=m.n()).done;){var S=p.value;v.transform(this._boundingBox,this._rangedDirLightBoundingBox,S.node.getWorldMatrix()),T.aabbFrustum(this._boundingBox,a)&&this.lights.push(S)}}catch(e){m.e(e)}finally{m.f()}t&&this.shadowEnabledSpotLights.sort((function(e,a){return u.squaredDistance(t,e.position)-u.squaredDistance(t,a.position)}))}},{key:"_addLightQueues",value:function(e,a){var t,i=n(this.lights);try{for(i.s();!(t=i.n()).done;){var r=t.value,s=a.addQueue(l.QueueHint.BLEND,"forward-add");switch(r.type){case B.SPHERE:s.name="sphere-light";break;case B.SPOT:s.name="spot-light";break;case B.POINT:s.name="point-light";break;case B.RANGED_DIRECTIONAL:s.name="ranged-directional-light";break;default:s.name="unknown-light"}s.addScene(e,l.SceneFlags.BLEND,r)}}catch(e){i.e(e)}finally{i.f()}}},{key:"addSpotlightShadowPasses",value:function(e,a,t){var i,r=0,s=n(this.shadowEnabledSpotLights);try{for(s.s();!(i=s.n()).done;){var o=i.value,d=e.pipelineSceneData.shadows.size,h=e.addRenderPass(d.x,d.y,"default");if(h.name="SpotLightShadowPass".concat(r),h.addRenderTarget("SpotShadowMap".concat(r),L.CLEAR,x.STORE,new E(1,1,1,1)),h.addDepthStencil("SpotShadowDepth".concat(r),L.CLEAR,x.DISCARD),h.addQueue(l.QueueHint.NONE,"shadow-caster").addScene(a,l.SceneFlags.OPAQUE|l.SceneFlags.MASK|l.SceneFlags.SHADOW_CASTER).useLightFrustum(o),++r>=t)break}}catch(e){s.e(e)}finally{s.f()}}},{key:"addLightQueues",value:function(e,a,t){this._addLightQueues(a,e);var i,r=0,s=n(this.shadowEnabledSpotLights);try{for(s.s();!(i=s.n()).done;){var o=i.value;if(e.addTexture("SpotShadowMap".concat(r),"cc_spotShadowMap"),e.addQueue(l.QueueHint.BLEND,"forward-add").addScene(a,l.SceneFlags.BLEND,o),++r>=t)break}}catch(e){s.e(e)}finally{s.f()}}},{key:"addLightPasses",value:function(e,a,t,i,r,s,o,d,h,c){this._addLightQueues(o,c);var u,g=0,p=h.pipelineSceneData.shadows.size,m=n(this.shadowEnabledSpotLights);try{for(m.s();!(u=m.n()).done;){var S=u.value,f=h.addRenderPass(p.x,p.y,"default");f.name="SpotlightShadowPass",f.addRenderTarget("ShadowMap".concat(i),L.CLEAR,x.STORE,new E(1,1,1,1)),f.addDepthStencil("ShadowDepth".concat(i),L.CLEAR,x.DISCARD),f.addQueue(l.QueueHint.NONE,"shadow-caster").addScene(o,l.SceneFlags.OPAQUE|l.SceneFlags.MASK|l.SceneFlags.SHADOW_CASTER).useLightFrustum(S);var _=++g===this.shadowEnabledSpotLights.length?t:x.STORE;(c=h.addRenderPass(r,s,"default")).name="SpotlightWithShadowMap",c.setViewport(d),c.addRenderTarget(e,L.LOAD),c.addDepthStencil(a,L.LOAD,_),c.addTexture("ShadowMap".concat(i),"cc_spotShadowMap"),c.addQueue(l.QueueHint.BLEND,"forward-add").addScene(o,l.SceneFlags.BLEND,S)}}catch(e){m.e(e)}finally{m.f()}return c}},{key:"isMultipleLightPassesNeeded",value:function(){return this.shadowEnabledSpotLights.length>0}}]),e}(),X=e("BuiltinForwardPassBuilder",function(){function e(){t(this,e),i(this,"forwardLighting",new Y),i(this,"_viewport",new D),i(this,"_clearColor",new E(0,0,0,1)),i(this,"_reflectionProbeClearColor",new u(0,0,0))}return a(e,[{key:"getConfigOrder",value:function(){return e.ConfigOrder}},{key:"getRenderOrder",value:function(){return e.RenderOrder}},{key:"configCamera",value:function(e,a,t){t.enableMainLightShadowMap=a.shadowEnabled&&!a.usePlanarShadow&&!!e.scene&&!!e.scene.mainLight&&e.scene.mainLight.shadowEnabled,t.enableMainLightPlanarShadowMap=a.shadowEnabled&&a.usePlanarShadow&&!!e.scene&&!!e.scene.mainLight&&e.scene.mainLight.shadowEnabled,t.enablePlanarReflectionProbe=t.isMainGameWindow||e.cameraUsage===N.SCENE_VIEW||e.cameraUsage===N.GAME_VIEW,t.enableMSAA=t.settings.msaa.enabled&&!t.enableStoreSceneDepth&&!a.isWeb&&!a.isWebGL1,t.enableSingleForwardPass=a.isMobile||t.enableMSAA,++t.remainingPasses}},{key:"windowResize",value:function(e,a,t,i,n,r,s){var o=l.ResourceFlags,d=l.ResourceResidency,h=i.renderWindowId,c=t.settings,u=t.enableShadingScale?Math.max(Math.floor(r*t.shadingScale),1):r,g=t.enableShadingScale?Math.max(Math.floor(s*t.shadingScale),1):s;if(t.enableMSAA&&(t.enableHDR?e.addTexture("MsaaRadiance".concat(h),y.TEX2D,t.radianceFormat,u,g,1,1,1,c.msaa.sampleCount,o.COLOR_ATTACHMENT,d.MEMORYLESS):e.addTexture("MsaaRadiance".concat(h),y.TEX2D,C.RGBA8,u,g,1,1,1,c.msaa.sampleCount,o.COLOR_ATTACHMENT,d.MEMORYLESS),e.addTexture("MsaaDepthStencil".concat(h),y.TEX2D,C.DEPTH_STENCIL,u,g,1,1,1,c.msaa.sampleCount,o.DEPTH_STENCIL_ATTACHMENT,d.MEMORYLESS)),e.addRenderTarget("ShadowMap".concat(h),a.shadowMapFormat,a.shadowMapSize.x,a.shadowMapSize.y),e.addDepthStencil("ShadowDepth".concat(h),C.DEPTH_STENCIL,a.shadowMapSize.x,a.shadowMapSize.y),t.enableSingleForwardPass)for(var p=a.mobileMaxSpotLightShadowMaps,m=0;m!==p;++m)e.addRenderTarget("SpotShadowMap".concat(m),a.shadowMapFormat,a.shadowMapSize.x,a.shadowMapSize.y),e.addDepthStencil("SpotShadowDepth".concat(m),C.DEPTH_STENCIL,a.shadowMapSize.x,a.shadowMapSize.y)}},{key:"setup",value:function(e,a,t,i,n){var r=i.window.renderWindowId,s=i.scene,o=s.mainLight;--t.remainingPasses,g(t.remainingPasses>=0),this.forwardLighting.cullLights(s,i.frustum),t.enableMainLightShadowMap&&(g(!!o),this._addCascadedShadowMapPass(e,a,r,o,i)),t.enableSingleForwardPass&&this.forwardLighting.addSpotlightShadowPasses(e,i,a.mobileMaxSpotLightShadowMaps),this._tryAddReflectionProbePasses(e,t,r,o,i.scene),t.remainingPasses>0||t.enableShadingScale?(n.colorName=t.enableShadingScale?"ScaledRadiance0_".concat(r):"Radiance0_".concat(r),n.depthStencilName=t.enableShadingScale?"ScaledSceneDepth_".concat(r):"SceneDepth_".concat(r)):(n.colorName=t.colorName,n.depthStencilName=t.depthStencilName);var d=this._addForwardRadiancePasses(e,a,t,r,i,t.width,t.height,o,n.colorName,n.depthStencilName,!t.enableMSAA,t.enableStoreSceneDepth?x.STORE:x.DISCARD);return t.enableStoreSceneDepth||(n.depthStencilName=""),0===t.remainingPasses&&t.enableShadingScale?U(e,a,t,n.colorName):d}},{key:"_addCascadedShadowMapPass",value:function(e,a,t,i,n){var r=l.QueueHint,s=l.SceneFlags,o=e.pipelineSceneData.shadows.size,d=o.x,h=o.y,c=this._viewport;c.left=c.top=0,c.width=d,c.height=h;var u=e.addRenderPass(d,h,"default");u.name="CascadedShadowMap",u.addRenderTarget("ShadowMap".concat(t),L.CLEAR,x.STORE,new E(1,1,1,1)),u.addDepthStencil("ShadowDepth".concat(t),L.CLEAR,x.DISCARD);for(var g=e.pipelineSceneData.csmSupported?i.csmLevel:1,p=0;p!==g;++p){k(i,d,h,p,this._viewport,a.screenSpaceSignY);var m=u.addQueue(r.NONE,"shadow-caster");a.isWebGPU||m.setViewport(this._viewport),m.addScene(n,s.OPAQUE|s.MASK|s.SHADOW_CASTER).useLightFrustum(i,p)}}},{key:"_tryAddReflectionProbePasses",value:function(e,a,t,i,s){var h=r.internal.reflectionProbeManager;if(h){var c,u=l.ResourceResidency,g=h.getProbes(),p=0,m=n(g);try{for(m.s();!(c=m.n()).done;){var S=c.value;if(S.needRender){var f=S.renderArea(),_=Math.max(Math.floor(f.x),1),w=Math.max(Math.floor(f.y),1);if(S.probeType===d.scene.ProbeType.PLANAR){if(!a.enablePlanarReflectionProbe)continue;var b=S.realtimePlanarTexture.window,P="PlanarProbeRT".concat(p),v="PlanarProbeDS".concat(p);e.addRenderWindow(P,a.radianceFormat,_,w,b),e.addDepthStencil(v,o.Format.DEPTH_STENCIL,_,w,u.MEMORYLESS);var R=e.addRenderPass(_,w,"default");R.name="PlanarReflectionProbe".concat(p),this._buildReflectionProbePass(R,a,t,S.camera,P,v,i,s)}else;if(4===++p)break}}}catch(e){m.e(e)}finally{m.f()}}}},{key:"_buildReflectionProbePass",value:function(e,a,t,i,n,r,s){var o=arguments.length>7&&void 0!==arguments[7]?arguments[7]:null,d=l.QueueHint,h=l.SceneFlags,c=a.enableMSAA?x.DISCARD:x.STORE;if(Q(i)){this._reflectionProbeClearColor.x=i.clearColor.x,this._reflectionProbeClearColor.y=i.clearColor.y,this._reflectionProbeClearColor.z=i.clearColor.z;var u=l.packRGBE(this._reflectionProbeClearColor);this._clearColor.x=u.x,this._clearColor.y=u.y,this._clearColor.z=u.z,this._clearColor.w=u.w,e.addRenderTarget(n,L.CLEAR,c,this._clearColor)}else e.addRenderTarget(n,L.LOAD,c);i.clearFlag&M.DEPTH_STENCIL?e.addDepthStencil(r,L.CLEAR,x.DISCARD,i.clearDepth,i.clearStencil,i.clearFlag&M.DEPTH_STENCIL):e.addDepthStencil(r,L.LOAD,x.DISCARD),a.enableMainLightShadowMap&&e.addTexture("ShadowMap".concat(t),"cc_shadowMap"),e.addQueue(d.NONE,"reflect-map").addScene(i,h.OPAQUE|h.MASK|h.REFLECTION_PROBE,s||void 0,o||void 0)}},{key:"_addForwardRadiancePasses",value:function(e,a,t,i,n,r,s,o,d,h){var c=arguments.length>10&&void 0!==arguments[10]&&arguments[10],u=arguments.length>11&&void 0!==arguments[11]?arguments[11]:x.DISCARD,p=l.QueueHint,m=l.SceneFlags,S=n.clearColor;this._clearColor.x=S.x,this._clearColor.y=S.y,this._clearColor.z=S.z,this._clearColor.w=S.w;var f=n.viewport;this._viewport.left=Math.round(f.x*r),this._viewport.top=Math.round(f.y*s),this._viewport.width=Math.max(Math.round(f.width*r),1),this._viewport.height=Math.max(Math.round(f.height*s),1);var _=!c&&t.enableMSAA;g(!_||t.enableSingleForwardPass);var w=t.enableSingleForwardPass?this._addForwardSingleRadiancePass(e,a,t,i,n,_,r,s,o,d,h,u):this._addForwardMultipleRadiancePasses(e,t,i,n,r,s,o,d,h,u);t.enableMainLightPlanarShadowMap&&this._addPlanarShadowQueue(n,o,w);var b=m.BLEND|(n.geometryRenderer?m.GEOMETRY:m.NONE);return w.addQueue(p.BLEND).addScene(n,b,o||void 0),w}},{key:"_addForwardSingleRadiancePass",value:function(e,a,t,i,n,r,s,o,d,l,h,c){var u;if(g(t.enableSingleForwardPass),r){var p="MsaaRadiance".concat(i),m="MsaaDepthStencil".concat(i),S=t.settings.msaa.sampleCount,f=e.addMultisampleRenderPass(s,o,S,0,"default");f.name="MsaaForwardPass",this._buildForwardMainLightPass(f,t,i,n,p,m,x.DISCARD,d),f.resolveRenderTarget(p,l),u=f}else(u=e.addRenderPass(s,o,"default")).name="ForwardPass",this._buildForwardMainLightPass(u,t,i,n,l,h,c,d);return g(void 0!==u),this.forwardLighting.addLightQueues(u,n,a.mobileMaxSpotLightShadowMaps),u}},{key:"_addForwardMultipleRadiancePasses",value:function(e,a,t,i,n,r,s,o,d,l){g(!a.enableSingleForwardPass);var h=e.addRenderPass(n,r,"default");h.name="ForwardPass";var c=this.forwardLighting.isMultipleLightPassesNeeded()?x.STORE:l;return this._buildForwardMainLightPass(h,a,t,i,o,d,c,s),h=this.forwardLighting.addLightPasses(o,d,l,t,n,r,i,this._viewport,e,h)}},{key:"_buildForwardMainLightPass",value:function(e,a,t,i,n,r,s,o){var d=arguments.length>8&&void 0!==arguments[8]?arguments[8]:null,h=l.QueueHint,c=l.SceneFlags;e.setViewport(this._viewport);var u=a.enableMSAA?x.DISCARD:x.STORE;Q(i)?e.addRenderTarget(n,L.CLEAR,u,this._clearColor):e.addRenderTarget(n,L.LOAD,u),i.clearFlag&M.DEPTH_STENCIL?e.addDepthStencil(r,L.CLEAR,s,i.clearDepth,i.clearStencil,i.clearFlag&M.DEPTH_STENCIL):e.addDepthStencil(r,L.LOAD,s),a.enableMainLightShadowMap&&e.addTexture("ShadowMap".concat(t),"cc_shadowMap"),e.addQueue(h.NONE).addScene(i,c.OPAQUE|c.MASK,o||void 0,d||void 0)}},{key:"_addPlanarShadowQueue",value:function(e,a,t){var i=l.QueueHint,n=l.SceneFlags;t.addQueue(i.BLEND,"planar-shadow").addScene(e,n.SHADOW_CASTER|n.PLANAR_SHADOW|n.BLEND,a||void 0)}}]),e}());i(X,"ConfigOrder",100),i(X,"RenderOrder",100);var K=e("BuiltinBloomPassBuilder",function(){function e(){t(this,e),i(this,"_clearColorTransparentBlack",new E(0,0,0,0)),i(this,"_bloomParams",new c(0,0,0,0)),i(this,"_bloomTexSize",new c(0,0,0,0)),i(this,"_bloomWidths",[]),i(this,"_bloomHeights",[]),i(this,"_bloomTexNames",[])}return a(e,[{key:"getConfigOrder",value:function(){return 0}},{key:"getRenderOrder",value:function(){return 200}},{key:"configCamera",value:function(e,a,t){t.enableBloom=t.settings.bloom.enabled&&!!t.settings.bloom.material,t.enableBloom&&++t.remainingPasses}},{key:"windowResize",value:function(e,a,t,i){if(t.enableBloom)for(var n=i.renderWindowId,r=t.width,s=t.height,o=0;o!==t.settings.bloom.iterations+1;++o)r=Math.max(Math.floor(r/2),1),s=Math.max(Math.floor(s/2),1),e.addRenderTarget("BloomTex".concat(n,"_").concat(o),t.radianceFormat,r,s)}},{key:"setup",value:function(e,a,t,i,n,r){if(!t.enableBloom)return r;--t.remainingPasses,g(t.remainingPasses>=0);var s=i.window.renderWindowId;return g(!!t.settings.bloom.material),this._addKawaseDualFilterBloomPasses(e,a,t,t.settings,t.settings.bloom.material,s,t.width,t.height,n.colorName)}},{key:"_addKawaseDualFilterBloomPasses",value:function(e,a,t,i,n,r,s,o,d){var h=l.QueueHint,c=i.bloom.iterations,u=c+1;this._bloomWidths.length=u,this._bloomHeights.length=u,this._bloomWidths[0]=Math.max(Math.floor(s/2),1),this._bloomHeights[0]=Math.max(Math.floor(o/2),1);for(var g=1;g!==u;++g)this._bloomWidths[g]=Math.max(Math.floor(this._bloomWidths[g-1]/2),1),this._bloomHeights[g]=Math.max(Math.floor(this._bloomHeights[g-1]/2),1);this._bloomTexNames.length=u;for(var p=0;p!==u;++p)this._bloomTexNames[p]="BloomTex".concat(r,"_").concat(p);this._bloomParams.x=a.useFloatOutput?1:0,this._bloomParams.x=0,this._bloomParams.z=i.bloom.threshold,this._bloomParams.w=i.bloom.enableAlphaMask?1:0;var m=e.addRenderPass(this._bloomWidths[0],this._bloomHeights[0],"cc-bloom-prefilter");m.addRenderTarget(this._bloomTexNames[0],L.CLEAR,x.STORE,this._clearColorTransparentBlack),m.addTexture(d,"inputTexture"),m.setVec4("g_platform",a.platform),m.setVec4("bloomParams",this._bloomParams),m.addQueue(h.OPAQUE).addFullscreenQuad(n,0);for(var S=1;S!==u;++S){var f=e.addRenderPass(this._bloomWidths[S],this._bloomHeights[S],"cc-bloom-downsample");f.addRenderTarget(this._bloomTexNames[S],L.CLEAR,x.STORE,this._clearColorTransparentBlack),f.addTexture(this._bloomTexNames[S-1],"bloomTexture"),this._bloomTexSize.x=this._bloomWidths[S-1],this._bloomTexSize.y=this._bloomHeights[S-1],f.setVec4("g_platform",a.platform),f.setVec4("bloomTexSize",this._bloomTexSize),f.addQueue(h.OPAQUE).addFullscreenQuad(n,1)}for(var _=c;_-- >0;){var w=e.addRenderPass(this._bloomWidths[_],this._bloomHeights[_],"cc-bloom-upsample");w.addRenderTarget(this._bloomTexNames[_],L.CLEAR,x.STORE,this._clearColorTransparentBlack),w.addTexture(this._bloomTexNames[_+1],"bloomTexture"),this._bloomTexSize.x=this._bloomWidths[_+1],this._bloomTexSize.y=this._bloomHeights[_+1],w.setVec4("g_platform",a.platform),w.setVec4("bloomTexSize",this._bloomTexSize),w.addQueue(h.OPAQUE).addFullscreenQuad(n,2)}var b=e.addRenderPass(s,o,"cc-bloom-combine");return b.addRenderTarget(d,L.LOAD,x.STORE),b.addTexture(this._bloomTexNames[0],"bloomTexture"),b.setVec4("g_platform",a.platform),b.setVec4("bloomParams",this._bloomParams),b.addQueue(h.BLEND).addFullscreenQuad(n,3),0===t.remainingPasses?U(e,a,t,d):b}}]),e}()),q=e("BuiltinToneMappingPassBuilder",function(){function e(){t(this,e),i(this,"_colorGradingTexSize",new h(0,0))}return a(e,[{key:"getConfigOrder",value:function(){return 0}},{key:"getRenderOrder",value:function(){return 300}},{key:"configCamera",value:function(e,a,t){var i=t.settings;t.enableColorGrading=i.colorGrading.enabled&&!!i.colorGrading.material&&!!i.colorGrading.colorGradingMap,t.enableToneMapping=t.enableHDR||t.enableColorGrading,t.enableToneMapping&&++t.remainingPasses}},{key:"windowResize",value:function(e,a,t){t.enableColorGrading&&(g(!!t.settings.colorGrading.material),t.settings.colorGrading.material.setProperty("colorGradingMap",t.settings.colorGrading.colorGradingMap))}},{key:"setup",value:function(e,a,t,i,n,r){if(!t.enableToneMapping)return r;if(--t.remainingPasses,g(t.remainingPasses>=0),0===t.remainingPasses)return this._addCopyAndTonemapPass(e,a,t,t.width,t.height,n.colorName,t.colorName);var s=t.renderWindowId,o=t.enableShadingScale?"ScaledLdrColor":"LdrColor",d=V(n.colorName,o,s),l=n.colorName;return n.colorName=d,this._addCopyAndTonemapPass(e,a,t,t.width,t.height,l,d)}},{key:"_addCopyAndTonemapPass",value:function(e,a,t,i,n,r,s){var o,d=t.settings;if(t.enableColorGrading){g(!!d.colorGrading.material),g(!!d.colorGrading.colorGradingMap);var h=d.colorGrading.colorGradingMap;this._colorGradingTexSize.x=h.width,this._colorGradingTexSize.y=h.height;var c=h.width===h.height;(o=c?e.addRenderPass(i,n,"cc-color-grading-8x8"):e.addRenderPass(i,n,"cc-color-grading-nx1")).addRenderTarget(s,L.CLEAR,x.STORE,G),o.addTexture(r,"sceneColorMap"),o.setVec4("g_platform",a.platform),o.setVec2("lutTextureSize",this._colorGradingTexSize),o.setFloat("contribute",d.colorGrading.contribute),o.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(d.colorGrading.material,c?1:0)}else(o=e.addRenderPass(i,n,"cc-tone-mapping")).addRenderTarget(s,L.CLEAR,x.STORE,G),o.addTexture(r,"inputTexture"),o.setVec4("g_platform",a.platform),d.toneMapping.material?o.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(d.toneMapping.material,0):(g(!!t.copyAndTonemapMaterial),o.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(t.copyAndTonemapMaterial,0));return o}}]),e}()),j=e("BuiltinFXAAPassBuilder",function(){function e(){t(this,e),i(this,"_fxaaParams",new c(0,0,0,0))}return a(e,[{key:"getConfigOrder",value:function(){return 0}},{key:"getRenderOrder",value:function(){return 400}},{key:"configCamera",value:function(e,a,t){t.enableFXAA=t.settings.fxaa.enabled&&!!t.settings.fxaa.material,t.enableFXAA&&++t.remainingPasses}},{key:"setup",value:function(e,a,t,i,n,r){if(!t.enableFXAA)return r;--t.remainingPasses,g(t.remainingPasses>=0);var s=t.renderWindowId,o=t.enableShadingScale?"ScaledLdrColor":"LdrColor",d=V(n.colorName,o,s);if(g(!!t.settings.fxaa.material),0===t.remainingPasses)return t.enableShadingScale?(this._addFxaaPass(e,a,t.settings.fxaa.material,t.width,t.height,n.colorName,d),U(e,a,t,d)):(g(t.width===t.nativeWidth),g(t.height===t.nativeHeight),this._addFxaaPass(e,a,t.settings.fxaa.material,t.width,t.height,n.colorName,t.colorName));var l=n.colorName;return n.colorName=d,this._addFxaaPass(e,a,t.settings.fxaa.material,t.width,t.height,l,d)}},{key:"_addFxaaPass",value:function(e,a,t,i,n,r,s){this._fxaaParams.x=i,this._fxaaParams.y=n,this._fxaaParams.z=1/i,this._fxaaParams.w=1/n;var o=e.addRenderPass(i,n,"cc-fxaa");return o.addRenderTarget(s,L.CLEAR,x.STORE,G),o.addTexture(r,"sceneColorMap"),o.setVec4("g_platform",a.platform),o.setVec4("texSize",this._fxaaParams),o.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(t,0),o}}]),e}()),Z=e("BuiltinFsrPassBuilder",function(){function e(){t(this,e),i(this,"_fsrParams",new c(0,0,0,0)),i(this,"_fsrTexSize",new c(0,0,0,0))}return a(e,[{key:"getConfigOrder",value:function(){return 0}},{key:"getRenderOrder",value:function(){return 500}},{key:"configCamera",value:function(e,a,t){t.enableFSR=t.settings.fsr.enabled&&!!t.settings.fsr.material&&t.enableShadingScale&&t.shadingScale<1,t.enableFSR&&++t.remainingPasses}},{key:"setup",value:function(e,a,t,i,n,r){if(!t.enableFSR)return r;--t.remainingPasses;var s=n.colorName,o=0===t.remainingPasses?t.colorName:V(n.colorName,"UiColor",t.renderWindowId);return n.colorName=o,g(!!t.settings.fsr.material),this._addFsrPass(e,a,t,t.settings,t.settings.fsr.material,t.renderWindowId,t.width,t.height,s,t.nativeWidth,t.nativeHeight,o)}},{key:"_addFsrPass",value:function(e,a,t,i,n,r,s,o,d,h,c,u){this._fsrTexSize.x=s,this._fsrTexSize.y=o,this._fsrTexSize.z=h,this._fsrTexSize.w=c,this._fsrParams.x=p(1-i.fsr.sharpness,.02,.98);var g=V(u,"UiColor",r),m=e.addRenderPass(h,c,"cc-fsr-easu");m.addRenderTarget(g,L.CLEAR,x.STORE,G),m.addTexture(d,"outputResultMap"),m.setVec4("g_platform",a.platform),m.setVec4("fsrTexSize",this._fsrTexSize),m.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(n,0);var S=e.addRenderPass(h,c,"cc-fsr-rcas");return S.addRenderTarget(u,L.CLEAR,x.STORE,G),S.addTexture(g,"outputResultMap"),S.setVec4("g_platform",a.platform),S.setVec4("fsrTexSize",this._fsrTexSize),S.setVec4("fsrParams",this._fsrParams),S.addQueue(l.QueueHint.OPAQUE).addFullscreenQuad(n,1),S}}]),e}()),J=e("BuiltinUiPassBuilder",function(){function e(){t(this,e)}return a(e,[{key:"getConfigOrder",value:function(){return 0}},{key:"getRenderOrder",value:function(){return 1e3}},{key:"setup",value:function(e,a,t,i,n,r){g(!!r);var s=l.SceneFlags.UI;return t.enableProfiler&&(s|=l.SceneFlags.PROFILER,r.showStatistics=!0),r.addQueue(l.QueueHint.BLEND,"default","default").addScene(i,s),r}}]),e}());if(l){var $=l.QueueHint,ee=l.SceneFlags,ae=function(){function e(){t(this,e),i(this,"_pipelineEvent",r.director.root.pipelineEvent),i(this,"_forwardPass",new X),i(this,"_bloomPass",new K),i(this,"_toneMappingPass",new q),i(this,"_fxaaPass",new j),i(this,"_fsrPass",new Z),i(this,"_uiPass",new J),i(this,"_clearColor",new E(0,0,0,1)),i(this,"_viewport",new D),i(this,"_configs",new H),i(this,"_cameraConfigs",new W),i(this,"_copyAndTonemapMaterial",new w),i(this,"_initialized",!1),i(this,"_passBuilders",[])}return a(e,[{key:"_setupPipelinePreview",value:function(e,a){if(e.cameraUsage===N.SCENE_VIEW||e.cameraUsage===N.PREVIEW){var t=l.getEditorPipelineSettings();a.settings=t||I}else e.pipelineSettings?a.settings=e.pipelineSettings:a.settings=I}},{key:"_preparePipelinePasses",value:function(e){var a=this._passBuilders;a.length=0;var t=e.settings;if(t._passes){var i,r=n(t._passes);try{for(r.s();!(i=r.n()).done;){var s=i.value;a.push(s)}}catch(e){r.e(e)}finally{r.f()}g(a.length===t._passes.length)}a.push(this._forwardPass),t.bloom.enabled&&a.push(this._bloomPass),a.push(this._toneMappingPass),t.fxaa.enabled&&a.push(this._fxaaPass),t.fsr.enabled&&a.push(this._fsrPass),a.push(this._uiPass)}},{key:"_setupBuiltinCameraConfigs",value:function(e,a,t){var i=e.window,n=e.cameraUsage===N.GAME&&!!i.swapchain;t.isMainGameWindow=n,t.renderWindowId=i.renderWindowId,t.colorName=i.colorName,t.depthStencilName=i.depthStencilName,t.enableFullPipeline=0!=(e.visibility&m.Enum.DEFAULT),t.enableProfiler=b,t.remainingPasses=0,t.shadingScale=t.settings.shadingScale,t.enableShadingScale=t.settings.enableShadingScale&&1!==t.shadingScale,t.nativeWidth=Math.max(Math.floor(i.width),1),t.nativeHeight=Math.max(Math.floor(i.height),1),t.width=t.enableShadingScale?Math.max(Math.floor(t.nativeWidth*t.shadingScale),1):t.nativeWidth,t.height=t.enableShadingScale?Math.max(Math.floor(t.nativeHeight*t.shadingScale),1):t.nativeHeight,t.enableHDR=t.enableFullPipeline&&a.useFloatOutput,t.radianceFormat=t.enableHDR?o.Format.RGBA16F:o.Format.RGBA8,t.copyAndTonemapMaterial=this._copyAndTonemapMaterial,t.enableStoreSceneDepth=!1}},{key:"_setupCameraConfigs",value:function(e,a,t){this._setupPipelinePreview(e,t),this._preparePipelinePasses(t),this._passBuilders.sort((function(e,a){return e.getConfigOrder()-a.getConfigOrder()})),this._setupBuiltinCameraConfigs(e,a,t);var i,r=n(this._passBuilders);try{for(r.s();!(i=r.n()).done;){var s=i.value;s.configCamera&&s.configCamera(e,a,t)}}catch(e){r.e(e)}finally{r.f()}}},{key:"windowResize",value:function(e,a,t,i,r){z(e,this._configs),this._setupCameraConfigs(t,this._configs,this._cameraConfigs);var s=a.renderWindowId;e.addRenderWindow(this._cameraConfigs.colorName,C.RGBA8,i,r,a,this._cameraConfigs.depthStencilName);var o=this._cameraConfigs.width,d=this._cameraConfigs.height;this._cameraConfigs.enableShadingScale?(e.addDepthStencil("ScaledSceneDepth_".concat(s),C.DEPTH_STENCIL,o,d),e.addRenderTarget("ScaledRadiance0_".concat(s),this._cameraConfigs.radianceFormat,o,d),e.addRenderTarget("ScaledRadiance1_".concat(s),this._cameraConfigs.radianceFormat,o,d),e.addRenderTarget("ScaledLdrColor0_".concat(s),C.RGBA8,o,d),e.addRenderTarget("ScaledLdrColor1_".concat(s),C.RGBA8,o,d)):(e.addDepthStencil("SceneDepth_".concat(s),C.DEPTH_STENCIL,o,d),e.addRenderTarget("Radiance0_".concat(s),this._cameraConfigs.radianceFormat,o,d),e.addRenderTarget("Radiance1_".concat(s),this._cameraConfigs.radianceFormat,o,d),e.addRenderTarget("LdrColor0_".concat(s),C.RGBA8,o,d),e.addRenderTarget("LdrColor1_".concat(s),C.RGBA8,o,d)),e.addRenderTarget("UiColor0_".concat(s),C.RGBA8,i,r),e.addRenderTarget("UiColor1_".concat(s),C.RGBA8,i,r);var l,h=n(this._passBuilders);try{for(h.s();!(l=h.n()).done;){var c=l.value;c.windowResize&&c.windowResize(e,this._configs,this._cameraConfigs,a,t,i,r)}}catch(e){h.e(e)}finally{h.f()}}},{key:"setup",value:function(e,a){if(!this._initMaterials(a)){var t,i=n(e);try{for(i.s();!(t=i.n()).done;){var r=t.value;r.scene&&r.window&&(this._setupCameraConfigs(r,this._configs,this._cameraConfigs),this._pipelineEvent.emit(S.RENDER_CAMERA_BEGIN,r),this._cameraConfigs.enableFullPipeline?this._buildForwardPipeline(a,r,r.scene,this._passBuilders):this._buildSimplePipeline(a,r),this._pipelineEvent.emit(S.RENDER_CAMERA_END,r))}}catch(e){i.e(e)}finally{i.f()}}}},{key:"_buildSimplePipeline",value:function(e,a){var t=Math.max(Math.floor(a.window.width),1),i=Math.max(Math.floor(a.window.height),1),n=this._cameraConfigs.colorName,r=this._cameraConfigs.depthStencilName,s=a.viewport;this._viewport.left=Math.round(s.x*t),this._viewport.top=Math.round(s.y*i),this._viewport.width=Math.max(Math.round(s.width*t),1),this._viewport.height=Math.max(Math.round(s.height*i),1);var o=a.clearColor;this._clearColor.x=o.x,this._clearColor.y=o.y,this._clearColor.z=o.z,this._clearColor.w=o.w;var d=e.addRenderPass(t,i,"default");Q(a)?d.addRenderTarget(n,L.CLEAR,x.STORE,this._clearColor):d.addRenderTarget(n,L.LOAD,x.STORE),a.clearFlag&M.DEPTH_STENCIL?d.addDepthStencil(r,L.CLEAR,x.DISCARD,a.clearDepth,a.clearStencil,a.clearFlag&M.DEPTH_STENCIL):d.addDepthStencil(r,L.LOAD,x.DISCARD),d.setViewport(this._viewport),d.addQueue($.OPAQUE).addScene(a,ee.OPAQUE);var l=ee.BLEND|ee.UI;this._cameraConfigs.enableProfiler&&(l|=ee.PROFILER,d.showStatistics=!0),d.addQueue($.BLEND).addScene(a,l)}},{key:"_buildForwardPipeline",value:function(e,a,t,i){!function(e){e.sort((function(e,a){return e.getRenderOrder()-a.getRenderOrder()}))}(i);var r,s={colorName:"",depthStencilName:""},o=void 0,d=n(i);try{for(d.s();!(r=d.n()).done;){var l=r.value;l.setup&&(o=l.setup(e,this._configs,this._cameraConfigs,a,s,o))}}catch(e){d.e(e)}finally{d.f()}g(0===this._cameraConfigs.remainingPasses)}},{key:"_initMaterials",value:function(e){return this._initialized?0:(z(e,this._configs),this._copyAndTonemapMaterial._uuid="builtin-pipeline-tone-mapping-material",this._copyAndTonemapMaterial.initialize({effectName:"pipeline/post-process/tone-mapping"}),this._copyAndTonemapMaterial.effectAsset&&(this._initialized=!0),this._initialized?0:1)}}]),e}();l.setCustomPipeline("Builtin",new ae)}r._RF.pop()}}}));
+          // MSAA
+        }, {
+          key: "MsaaEnable",
+          get: function get() {
+            return this._settings.msaa.enabled;
+          },
+          set: function set(value) {
+            this._settings.msaa.enabled = value;
+          }
+        }, {
+          key: "msaaSampleCount",
+          get: function get() {
+            return this._settings.msaa.sampleCount;
+          }
 
-System.register("chunks:///_virtual/internal",["./builtin-pipeline-settings.ts","./builtin-pipeline-types.ts","./builtin-pipeline.ts"],(function(){return{setters:[null,null,null],execute:function(){}}}));
+          // Shading Scale
+          ,
+
+          set: function set(value) {
+            value = Math.pow(2, Math.ceil(Math.log2(Math.max(value, 2))));
+            value = Math.min(value, 4);
+            this._settings.msaa.sampleCount = value;
+          }
+        }, {
+          key: "shadingScaleEnable",
+          get: function get() {
+            return this._settings.enableShadingScale;
+          },
+          set: function set(value) {
+            this._settings.enableShadingScale = value;
+          }
+        }, {
+          key: "shadingScale",
+          get: function get() {
+            return this._settings.shadingScale;
+          }
+
+          // Bloom
+          ,
+
+          set: function set(value) {
+            this._settings.shadingScale = value;
+          }
+        }, {
+          key: "bloomEnable",
+          get: function get() {
+            return this._settings.bloom.enabled;
+          },
+          set: function set(value) {
+            this._settings.bloom.enabled = value;
+          }
+        }, {
+          key: "bloomMaterial",
+          get: function get() {
+            return this._settings.bloom.material;
+          },
+          set: function set(value) {
+            if (this._settings.bloom.material === value) {
+              return;
+            }
+            this._settings.bloom.material = value;
+          }
+        }, {
+          key: "bloomEnableAlphaMask",
+          get: function get() {
+            return this._settings.bloom.enableAlphaMask;
+          },
+          set: function set(value) {
+            this._settings.bloom.enableAlphaMask = value;
+          }
+        }, {
+          key: "bloomIterations",
+          get: function get() {
+            return this._settings.bloom.iterations;
+          },
+          set: function set(value) {
+            this._settings.bloom.iterations = value;
+          }
+        }, {
+          key: "bloomThreshold",
+          get: function get() {
+            return this._settings.bloom.threshold;
+          },
+          set: function set(value) {
+            this._settings.bloom.threshold = value;
+          }
+        }, {
+          key: "bloomIntensity",
+          get: function get() {
+            return this._settings.bloom.intensity;
+          }
+
+          // Color Grading (LDR)
+          ,
+
+          set: function set(value) {
+            this._settings.bloom.intensity = value;
+          }
+        }, {
+          key: "colorGradingEnable",
+          get: function get() {
+            return this._settings.colorGrading.enabled;
+          },
+          set: function set(value) {
+            this._settings.colorGrading.enabled = value;
+          }
+        }, {
+          key: "colorGradingMaterial",
+          get: function get() {
+            return this._settings.colorGrading.material;
+          },
+          set: function set(value) {
+            if (this._settings.colorGrading.material === value) {
+              return;
+            }
+            this._settings.colorGrading.material = value;
+          }
+        }, {
+          key: "colorGradingContribute",
+          get: function get() {
+            return this._settings.colorGrading.contribute;
+          },
+          set: function set(value) {
+            this._settings.colorGrading.contribute = value;
+          }
+        }, {
+          key: "colorGradingMap",
+          get: function get() {
+            return this._settings.colorGrading.colorGradingMap;
+          }
+
+          // FXAA
+          ,
+
+          set: function set(val) {
+            this._settings.colorGrading.colorGradingMap = val;
+          }
+        }, {
+          key: "fxaaEnable",
+          get: function get() {
+            return this._settings.fxaa.enabled;
+          },
+          set: function set(value) {
+            this._settings.fxaa.enabled = value;
+          }
+        }, {
+          key: "fxaaMaterial",
+          get: function get() {
+            return this._settings.fxaa.material;
+          }
+
+          // FSR
+          ,
+
+          set: function set(value) {
+            if (this._settings.fxaa.material === value) {
+              return;
+            }
+            this._settings.fxaa.material = value;
+          }
+        }, {
+          key: "fsrEnable",
+          get: function get() {
+            return this._settings.fsr.enabled;
+          },
+          set: function set(value) {
+            this._settings.fsr.enabled = value;
+          }
+        }, {
+          key: "fsrMaterial",
+          get: function get() {
+            return this._settings.fsr.material;
+          },
+          set: function set(value) {
+            if (this._settings.fsr.material === value) {
+              return;
+            }
+            this._settings.fsr.material = value;
+          }
+        }, {
+          key: "fsrSharpness",
+          get: function get() {
+            return this._settings.fsr.sharpness;
+          },
+          set: function set(value) {
+            this._settings.fsr.sharpness = value;
+          }
+        }, {
+          key: "toneMappingMaterial",
+          get: function get() {
+            return this._settings.toneMapping.material;
+          },
+          set: function set(value) {
+            if (this._settings.toneMapping.material === value) {
+              return;
+            }
+            this._settings.toneMapping.material = value;
+          }
+        }]);
+        return BuiltinPipelineSettings;
+      }(Component), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "_settings", [property], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return makePipelineSettings();
+        }
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "_editorPreview", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return false;
+        }
+      }), _applyDecoratedDescriptor(_class2.prototype, "editorPreview", [_dec5], Object.getOwnPropertyDescriptor(_class2.prototype, "editorPreview"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "MsaaEnable", [_dec6], Object.getOwnPropertyDescriptor(_class2.prototype, "MsaaEnable"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "msaaSampleCount", [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, "msaaSampleCount"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "shadingScaleEnable", [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, "shadingScaleEnable"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "shadingScale", [_dec9], Object.getOwnPropertyDescriptor(_class2.prototype, "shadingScale"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "bloomEnable", [_dec10], Object.getOwnPropertyDescriptor(_class2.prototype, "bloomEnable"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "bloomMaterial", [_dec11], Object.getOwnPropertyDescriptor(_class2.prototype, "bloomMaterial"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "bloomEnableAlphaMask", [_dec12], Object.getOwnPropertyDescriptor(_class2.prototype, "bloomEnableAlphaMask"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "bloomIterations", [_dec13], Object.getOwnPropertyDescriptor(_class2.prototype, "bloomIterations"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "bloomThreshold", [_dec14], Object.getOwnPropertyDescriptor(_class2.prototype, "bloomThreshold"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "colorGradingEnable", [_dec15], Object.getOwnPropertyDescriptor(_class2.prototype, "colorGradingEnable"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "colorGradingMaterial", [_dec16], Object.getOwnPropertyDescriptor(_class2.prototype, "colorGradingMaterial"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "colorGradingContribute", [_dec17], Object.getOwnPropertyDescriptor(_class2.prototype, "colorGradingContribute"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "colorGradingMap", [_dec18], Object.getOwnPropertyDescriptor(_class2.prototype, "colorGradingMap"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "fxaaEnable", [_dec19], Object.getOwnPropertyDescriptor(_class2.prototype, "fxaaEnable"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "fxaaMaterial", [_dec20], Object.getOwnPropertyDescriptor(_class2.prototype, "fxaaMaterial"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "fsrEnable", [_dec21], Object.getOwnPropertyDescriptor(_class2.prototype, "fsrEnable"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "fsrMaterial", [_dec22], Object.getOwnPropertyDescriptor(_class2.prototype, "fsrMaterial"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "fsrSharpness", [_dec23], Object.getOwnPropertyDescriptor(_class2.prototype, "fsrSharpness"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "toneMappingMaterial", [_dec24], Object.getOwnPropertyDescriptor(_class2.prototype, "toneMappingMaterial"), _class2.prototype)), _class2)) || _class) || _class) || _class) || _class) || _class));
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/builtin-pipeline-types.ts", ['cc'], function (exports) {
+  var cclegacy, gfx;
+  return {
+    setters: [function (module) {
+      cclegacy = module.cclegacy;
+      gfx = module.gfx;
+    }],
+    execute: function () {
+      exports({
+        fillRequiredBloom: fillRequiredBloom,
+        fillRequiredColorGrading: fillRequiredColorGrading,
+        fillRequiredFSR: fillRequiredFSR,
+        fillRequiredFXAA: fillRequiredFXAA,
+        fillRequiredHBAO: fillRequiredHBAO,
+        fillRequiredMSAA: fillRequiredMSAA,
+        fillRequiredPipelineSettings: fillRequiredPipelineSettings,
+        fillRequiredToneMapping: fillRequiredToneMapping,
+        makeBloom: makeBloom,
+        makeColorGrading: makeColorGrading,
+        makeFSR: makeFSR,
+        makeFXAA: makeFXAA,
+        makeHBAO: makeHBAO,
+        makeMSAA: makeMSAA,
+        makePipelineSettings: makePipelineSettings,
+        makeToneMapping: makeToneMapping
+      });
+      cclegacy._RF.push({}, "cbf30kCUX9A3K+QpVC6wnzx", "builtin-pipeline-types", undefined);
+      var SampleCount = gfx.SampleCount;
+      function makeMSAA() {
+        return {
+          enabled: false,
+          sampleCount: SampleCount.X4
+        };
+      }
+      function fillRequiredMSAA(value) {
+        if (value.enabled === undefined) {
+          value.enabled = false;
+        }
+        if (value.sampleCount === undefined) {
+          value.sampleCount = SampleCount.X4;
+        }
+      }
+      function makeHBAO() {
+        return {
+          enabled: false,
+          radiusScale: 1,
+          angleBiasDegree: 10,
+          blurSharpness: 3,
+          aoSaturation: 1,
+          needBlur: false
+        };
+      }
+      function fillRequiredHBAO(value) {
+        if (value.enabled === undefined) {
+          value.enabled = false;
+        }
+        if (value.radiusScale === undefined) {
+          value.radiusScale = 1;
+        }
+        if (value.angleBiasDegree === undefined) {
+          value.angleBiasDegree = 10;
+        }
+        if (value.blurSharpness === undefined) {
+          value.blurSharpness = 3;
+        }
+        if (value.aoSaturation === undefined) {
+          value.aoSaturation = 1;
+        }
+        if (value.needBlur === undefined) {
+          value.needBlur = false;
+        }
+      }
+      function makeBloom() {
+        return {
+          enabled: false,
+          material: null,
+          enableAlphaMask: false,
+          iterations: 3,
+          threshold: 0.8,
+          intensity: 2.3
+        };
+      }
+      function fillRequiredBloom(value) {
+        if (value.enabled === undefined) {
+          value.enabled = false;
+        }
+        if (value.material === undefined) {
+          value.material = null;
+        }
+        if (value.enableAlphaMask === undefined) {
+          value.enableAlphaMask = false;
+        }
+        if (value.iterations === undefined) {
+          value.iterations = 3;
+        }
+        if (value.threshold === undefined) {
+          value.threshold = 0.8;
+        }
+        if (value.intensity === undefined) {
+          value.intensity = 2.3;
+        }
+      }
+      function makeColorGrading() {
+        return {
+          enabled: false,
+          material: null,
+          contribute: 1,
+          colorGradingMap: null
+        };
+      }
+      function fillRequiredColorGrading(value) {
+        if (value.enabled === undefined) {
+          value.enabled = false;
+        }
+        if (value.material === undefined) {
+          value.material = null;
+        }
+        if (value.contribute === undefined) {
+          value.contribute = 1;
+        }
+        if (value.colorGradingMap === undefined) {
+          value.colorGradingMap = null;
+        }
+      }
+      function makeFSR() {
+        return {
+          enabled: false,
+          material: null,
+          sharpness: 0.8
+        };
+      }
+      function fillRequiredFSR(value) {
+        if (value.enabled === undefined) {
+          value.enabled = false;
+        }
+        if (value.material === undefined) {
+          value.material = null;
+        }
+        if (value.sharpness === undefined) {
+          value.sharpness = 0.8;
+        }
+      }
+      function makeFXAA() {
+        return {
+          enabled: false,
+          material: null
+        };
+      }
+      function fillRequiredFXAA(value) {
+        if (value.enabled === undefined) {
+          value.enabled = false;
+        }
+        if (value.material === undefined) {
+          value.material = null;
+        }
+      }
+      function makeToneMapping() {
+        return {
+          material: null
+        };
+      }
+      function fillRequiredToneMapping(value) {
+        if (value.material === undefined) {
+          value.material = null;
+        }
+      }
+      function makePipelineSettings() {
+        return {
+          msaa: makeMSAA(),
+          enableShadingScale: false,
+          shadingScale: 0.5,
+          bloom: makeBloom(),
+          toneMapping: makeToneMapping(),
+          colorGrading: makeColorGrading(),
+          fsr: makeFSR(),
+          fxaa: makeFXAA()
+        };
+      }
+      function fillRequiredPipelineSettings(value) {
+        if (!value.msaa) {
+          value.msaa = makeMSAA();
+        } else {
+          fillRequiredMSAA(value.msaa);
+        }
+        if (value.enableShadingScale === undefined) {
+          value.enableShadingScale = false;
+        }
+        if (value.shadingScale === undefined) {
+          value.shadingScale = 0.5;
+        }
+        if (!value.bloom) {
+          value.bloom = makeBloom();
+        } else {
+          fillRequiredBloom(value.bloom);
+        }
+        if (!value.toneMapping) {
+          value.toneMapping = makeToneMapping();
+        } else {
+          fillRequiredToneMapping(value.toneMapping);
+        }
+        if (!value.colorGrading) {
+          value.colorGrading = makeColorGrading();
+        } else {
+          fillRequiredColorGrading(value.colorGrading);
+        }
+        if (!value.fsr) {
+          value.fsr = makeFSR();
+        } else {
+          fillRequiredFSR(value.fsr);
+        }
+        if (!value.fxaa) {
+          value.fxaa = makeFXAA();
+        } else {
+          fillRequiredFXAA(value.fxaa);
+        }
+      }
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/builtin-pipeline.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './env', './builtin-pipeline-types.ts'], function (exports) {
+  var _createClass, _classCallCheck, _defineProperty, _createForOfIteratorHelper, cclegacy, geometry, gfx, renderer, rendering, Vec2, Vec4, Vec3, assert, warn, clamp, Layers, PipelineEventType, sys, pipeline, Material, EDITOR, makePipelineSettings;
+  return {
+    setters: [function (module) {
+      _createClass = module.createClass;
+      _classCallCheck = module.classCallCheck;
+      _defineProperty = module.defineProperty;
+      _createForOfIteratorHelper = module.createForOfIteratorHelper;
+    }, function (module) {
+      cclegacy = module.cclegacy;
+      geometry = module.geometry;
+      gfx = module.gfx;
+      renderer = module.renderer;
+      rendering = module.rendering;
+      Vec2 = module.Vec2;
+      Vec4 = module.Vec4;
+      Vec3 = module.Vec3;
+      assert = module.assert;
+      warn = module.warn;
+      clamp = module.clamp;
+      Layers = module.Layers;
+      PipelineEventType = module.PipelineEventType;
+      sys = module.sys;
+      pipeline = module.pipeline;
+      Material = module.Material;
+    }, function (module) {
+      EDITOR = module.EDITOR;
+    }, function (module) {
+      makePipelineSettings = module.makePipelineSettings;
+    }],
+    execute: function () {
+      exports('getPingPongRenderTarget', getPingPongRenderTarget);
+      cclegacy._RF.push({}, "ff9b0GZzgRM/obMbHGfCNbk", "builtin-pipeline", undefined);
+      var AABB = geometry.AABB,
+        Sphere = geometry.Sphere,
+        intersect = geometry.intersect;
+      var ClearFlagBit = gfx.ClearFlagBit,
+        Color = gfx.Color,
+        Format = gfx.Format,
+        FormatFeatureBit = gfx.FormatFeatureBit,
+        LoadOp = gfx.LoadOp,
+        StoreOp = gfx.StoreOp,
+        TextureType = gfx.TextureType,
+        Viewport = gfx.Viewport;
+      var scene = renderer.scene;
+      var CameraUsage = scene.CameraUsage,
+        CSMLevel = scene.CSMLevel,
+        LightType = scene.LightType;
+      function forwardNeedClearColor(camera) {
+        return !!(camera.clearFlag & (ClearFlagBit.COLOR | ClearFlagBit.STENCIL << 1));
+      }
+      function getCsmMainLightViewport(light, w, h, level, vp, screenSpaceSignY) {
+        if (light.shadowFixedArea || light.csmLevel === CSMLevel.LEVEL_1) {
+          vp.left = 0;
+          vp.top = 0;
+          vp.width = Math.trunc(w);
+          vp.height = Math.trunc(h);
+        } else {
+          vp.left = Math.trunc(level % 2 * 0.5 * w);
+          if (screenSpaceSignY > 0) {
+            vp.top = Math.trunc((1 - Math.floor(level / 2)) * 0.5 * h);
+          } else {
+            vp.top = Math.trunc(Math.floor(level / 2) * 0.5 * h);
+          }
+          vp.width = Math.trunc(0.5 * w);
+          vp.height = Math.trunc(0.5 * h);
+        }
+        vp.left = Math.max(0, vp.left);
+        vp.top = Math.max(0, vp.top);
+        vp.width = Math.max(1, vp.width);
+        vp.height = Math.max(1, vp.height);
+      }
+      var PipelineConfigs = exports('PipelineConfigs', /*#__PURE__*/_createClass(function PipelineConfigs() {
+        _classCallCheck(this, PipelineConfigs);
+        _defineProperty(this, "isWeb", false);
+        _defineProperty(this, "isWebGL1", false);
+        _defineProperty(this, "isWebGPU", false);
+        _defineProperty(this, "isMobile", false);
+        _defineProperty(this, "isHDR", false);
+        _defineProperty(this, "useFloatOutput", false);
+        _defineProperty(this, "toneMappingType", 0);
+        // 0: ACES, 1: None
+        _defineProperty(this, "shadowEnabled", false);
+        _defineProperty(this, "shadowMapFormat", Format.R32F);
+        _defineProperty(this, "shadowMapSize", new Vec2(1, 1));
+        _defineProperty(this, "usePlanarShadow", false);
+        _defineProperty(this, "screenSpaceSignY", 1);
+        _defineProperty(this, "supportDepthSample", false);
+        _defineProperty(this, "mobileMaxSpotLightShadowMaps", 1);
+        _defineProperty(this, "platform", new Vec4(0, 0, 0, 0));
+      }));
+      function setupPipelineConfigs(ppl, configs) {
+        var sampleFeature = FormatFeatureBit.SAMPLED_TEXTURE | FormatFeatureBit.LINEAR_FILTER;
+        var device = ppl.device;
+        // Platform
+        configs.isWeb = !sys.isNative;
+        configs.isWebGL1 = device.gfxAPI === gfx.API.WEBGL;
+        configs.isWebGPU = device.gfxAPI === gfx.API.WEBGPU;
+        configs.isMobile = sys.isMobile;
+
+        // Rendering
+        configs.isHDR = ppl.pipelineSceneData.isHDR; // Has tone mapping
+        configs.useFloatOutput = ppl.getMacroBool('CC_USE_FLOAT_OUTPUT');
+        configs.toneMappingType = ppl.pipelineSceneData.postSettings.toneMappingType;
+        // Shadow
+        var shadowInfo = ppl.pipelineSceneData.shadows;
+        configs.shadowEnabled = shadowInfo.enabled;
+        configs.shadowMapFormat = pipeline.supportsR32FloatTexture(ppl.device) ? Format.R32F : Format.RGBA8;
+        configs.shadowMapSize.set(shadowInfo.size);
+        configs.usePlanarShadow = shadowInfo.enabled && shadowInfo.type === renderer.scene.ShadowType.Planar;
+        // Device
+        configs.screenSpaceSignY = ppl.device.capabilities.screenSpaceSignY;
+        configs.supportDepthSample = (ppl.device.getFormatFeatures(Format.DEPTH_STENCIL) & sampleFeature) === sampleFeature;
+        // Constants
+        var screenSpaceSignY = device.capabilities.screenSpaceSignY;
+        configs.platform.x = configs.isMobile ? 1.0 : 0.0;
+        configs.platform.w = screenSpaceSignY * 0.5 + 0.5 << 1 | device.capabilities.clipSpaceSignY * 0.5 + 0.5;
+      }
+      var defaultSettings = makePipelineSettings();
+      var CameraConfigs = exports('CameraConfigs', /*#__PURE__*/_createClass(function CameraConfigs() {
+        _classCallCheck(this, CameraConfigs);
+        _defineProperty(this, "settings", defaultSettings);
+        // Window
+        _defineProperty(this, "isMainGameWindow", false);
+        _defineProperty(this, "renderWindowId", 0);
+        // Camera
+        _defineProperty(this, "colorName", '');
+        _defineProperty(this, "depthStencilName", '');
+        // Pipeline
+        _defineProperty(this, "enableFullPipeline", false);
+        _defineProperty(this, "enableProfiler", false);
+        _defineProperty(this, "remainingPasses", 0);
+        // Shading Scale
+        _defineProperty(this, "enableShadingScale", false);
+        _defineProperty(this, "shadingScale", 1.0);
+        _defineProperty(this, "nativeWidth", 1);
+        _defineProperty(this, "nativeHeight", 1);
+        _defineProperty(this, "width", 1);
+        // Scaled width
+        _defineProperty(this, "height", 1);
+        // Scaled height
+        // Radiance
+        _defineProperty(this, "enableHDR", false);
+        _defineProperty(this, "radianceFormat", gfx.Format.RGBA8);
+        // Tone Mapping
+        _defineProperty(this, "copyAndTonemapMaterial", null);
+        // Depth
+        /** @en mutable */
+        _defineProperty(this, "enableStoreSceneDepth", false);
+      }));
+      var sClearColorTransparentBlack = new Color(0, 0, 0, 0);
+      function sortPipelinePassBuildersByConfigOrder(passBuilders) {
+        passBuilders.sort(function (a, b) {
+          return a.getConfigOrder() - b.getConfigOrder();
+        });
+      }
+      function sortPipelinePassBuildersByRenderOrder(passBuilders) {
+        passBuilders.sort(function (a, b) {
+          return a.getRenderOrder() - b.getRenderOrder();
+        });
+      }
+      function addCopyToScreenPass(ppl, pplConfigs, cameraConfigs, input) {
+        assert(!!cameraConfigs.copyAndTonemapMaterial);
+        var pass = ppl.addRenderPass(cameraConfigs.nativeWidth, cameraConfigs.nativeHeight, 'cc-tone-mapping');
+        pass.addRenderTarget(cameraConfigs.colorName, LoadOp.CLEAR, StoreOp.STORE, sClearColorTransparentBlack);
+        pass.addTexture(input, 'inputTexture');
+        pass.setVec4('g_platform', pplConfigs.platform);
+        pass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(cameraConfigs.copyAndTonemapMaterial, 1);
+        return pass;
+      }
+      function getPingPongRenderTarget(prevName, prefix, id) {
+        if (prevName.startsWith(prefix)) {
+          return "".concat(prefix).concat(1 - Number(prevName.charAt(prefix.length)), "_").concat(id);
+        } else {
+          return "".concat(prefix, "0_").concat(id);
+        }
+      }
+      var ForwardLighting = /*#__PURE__*/function () {
+        function ForwardLighting() {
+          _classCallCheck(this, ForwardLighting);
+          // Active lights
+          _defineProperty(this, "lights", []);
+          // Active spot lights with shadows (Mutually exclusive with `lights`)
+          _defineProperty(this, "shadowEnabledSpotLights", []);
+          // Internal cached resources
+          _defineProperty(this, "_sphere", Sphere.create(0, 0, 0, 1));
+          _defineProperty(this, "_boundingBox", new AABB());
+          _defineProperty(this, "_rangedDirLightBoundingBox", new AABB(0.0, 0.0, 0.0, 0.5, 0.5, 0.5));
+        }
+        _createClass(ForwardLighting, [{
+          key: "cullLights",
+          value:
+          // ----------------------------------------------------------------
+          // Interface
+          // ----------------------------------------------------------------
+          function cullLights(scene, frustum, cameraPos) {
+            // TODO(zhouzhenglong): Make light culling native
+            this.lights.length = 0;
+            this.shadowEnabledSpotLights.length = 0;
+            // spot lights
+            var _iterator = _createForOfIteratorHelper(scene.spotLights),
+              _step;
+            try {
+              for (_iterator.s(); !(_step = _iterator.n()).done;) {
+                var light = _step.value;
+                if (light.baked) {
+                  continue;
+                }
+                Sphere.set(this._sphere, light.position.x, light.position.y, light.position.z, light.range);
+                if (intersect.sphereFrustum(this._sphere, frustum)) {
+                  if (light.shadowEnabled) {
+                    this.shadowEnabledSpotLights.push(light);
+                  } else {
+                    this.lights.push(light);
+                  }
+                }
+              }
+              // sphere lights
+            } catch (err) {
+              _iterator.e(err);
+            } finally {
+              _iterator.f();
+            }
+            var _iterator2 = _createForOfIteratorHelper(scene.sphereLights),
+              _step2;
+            try {
+              for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+                var _light = _step2.value;
+                if (_light.baked) {
+                  continue;
+                }
+                Sphere.set(this._sphere, _light.position.x, _light.position.y, _light.position.z, _light.range);
+                if (intersect.sphereFrustum(this._sphere, frustum)) {
+                  this.lights.push(_light);
+                }
+              }
+              // point lights
+            } catch (err) {
+              _iterator2.e(err);
+            } finally {
+              _iterator2.f();
+            }
+            var _iterator3 = _createForOfIteratorHelper(scene.pointLights),
+              _step3;
+            try {
+              for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+                var _light2 = _step3.value;
+                if (_light2.baked) {
+                  continue;
+                }
+                Sphere.set(this._sphere, _light2.position.x, _light2.position.y, _light2.position.z, _light2.range);
+                if (intersect.sphereFrustum(this._sphere, frustum)) {
+                  this.lights.push(_light2);
+                }
+              }
+              // ranged dir lights
+            } catch (err) {
+              _iterator3.e(err);
+            } finally {
+              _iterator3.f();
+            }
+            var _iterator4 = _createForOfIteratorHelper(scene.rangedDirLights),
+              _step4;
+            try {
+              for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+                var _light3 = _step4.value;
+                AABB.transform(this._boundingBox, this._rangedDirLightBoundingBox, _light3.node.getWorldMatrix());
+                if (intersect.aabbFrustum(this._boundingBox, frustum)) {
+                  this.lights.push(_light3);
+                }
+              }
+            } catch (err) {
+              _iterator4.e(err);
+            } finally {
+              _iterator4.f();
+            }
+            if (cameraPos) {
+              this.shadowEnabledSpotLights.sort(function (lhs, rhs) {
+                return Vec3.squaredDistance(cameraPos, lhs.position) - Vec3.squaredDistance(cameraPos, rhs.position);
+              });
+            }
+          }
+        }, {
+          key: "_addLightQueues",
+          value: function _addLightQueues(camera, pass) {
+            var _iterator5 = _createForOfIteratorHelper(this.lights),
+              _step5;
+            try {
+              for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+                var light = _step5.value;
+                var queue = pass.addQueue(rendering.QueueHint.BLEND, 'forward-add');
+                switch (light.type) {
+                  case LightType.SPHERE:
+                    queue.name = 'sphere-light';
+                    break;
+                  case LightType.SPOT:
+                    queue.name = 'spot-light';
+                    break;
+                  case LightType.POINT:
+                    queue.name = 'point-light';
+                    break;
+                  case LightType.RANGED_DIRECTIONAL:
+                    queue.name = 'ranged-directional-light';
+                    break;
+                  default:
+                    queue.name = 'unknown-light';
+                }
+                queue.addScene(camera, rendering.SceneFlags.BLEND, light);
+              }
+            } catch (err) {
+              _iterator5.e(err);
+            } finally {
+              _iterator5.f();
+            }
+          }
+        }, {
+          key: "addSpotlightShadowPasses",
+          value: function addSpotlightShadowPasses(ppl, camera, maxNumShadowMaps) {
+            var i = 0;
+            var _iterator6 = _createForOfIteratorHelper(this.shadowEnabledSpotLights),
+              _step6;
+            try {
+              for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+                var light = _step6.value;
+                var shadowMapSize = ppl.pipelineSceneData.shadows.size;
+                var shadowPass = ppl.addRenderPass(shadowMapSize.x, shadowMapSize.y, 'default');
+                shadowPass.name = "SpotLightShadowPass".concat(i);
+                shadowPass.addRenderTarget("SpotShadowMap".concat(i), LoadOp.CLEAR, StoreOp.STORE, new Color(1, 1, 1, 1));
+                shadowPass.addDepthStencil("SpotShadowDepth".concat(i), LoadOp.CLEAR, StoreOp.DISCARD);
+                shadowPass.addQueue(rendering.QueueHint.NONE, 'shadow-caster').addScene(camera, rendering.SceneFlags.OPAQUE | rendering.SceneFlags.MASK | rendering.SceneFlags.SHADOW_CASTER).useLightFrustum(light);
+                ++i;
+                if (i >= maxNumShadowMaps) {
+                  break;
+                }
+              }
+            } catch (err) {
+              _iterator6.e(err);
+            } finally {
+              _iterator6.f();
+            }
+          }
+        }, {
+          key: "addLightQueues",
+          value: function addLightQueues(pass, camera, maxNumShadowMaps) {
+            this._addLightQueues(camera, pass);
+            var i = 0;
+            var _iterator7 = _createForOfIteratorHelper(this.shadowEnabledSpotLights),
+              _step7;
+            try {
+              for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
+                var light = _step7.value;
+                // Add spot-light pass
+                // Save last RenderPass to the `pass` variable
+                // TODO(zhouzhenglong): Fix per queue addTexture
+                pass.addTexture("SpotShadowMap".concat(i), 'cc_spotShadowMap');
+                var queue = pass.addQueue(rendering.QueueHint.BLEND, 'forward-add');
+                queue.addScene(camera, rendering.SceneFlags.BLEND, light);
+                ++i;
+                if (i >= maxNumShadowMaps) {
+                  break;
+                }
+              }
+            } catch (err) {
+              _iterator7.e(err);
+            } finally {
+              _iterator7.f();
+            }
+          }
+
+          // Notice: ForwardLighting cannot handle a lot of lights.
+          // If there are too many lights, the performance will be very poor.
+          // If many lights are needed, please implement a forward+ or deferred rendering pipeline.
+        }, {
+          key: "addLightPasses",
+          value: function addLightPasses(colorName, depthStencilName, depthStencilStoreOp, id,
+          // window id
+          width, height, camera, viewport, ppl, pass) {
+            this._addLightQueues(camera, pass);
+            var count = 0;
+            var shadowMapSize = ppl.pipelineSceneData.shadows.size;
+            var _iterator8 = _createForOfIteratorHelper(this.shadowEnabledSpotLights),
+              _step8;
+            try {
+              for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
+                var light = _step8.value;
+                var shadowPass = ppl.addRenderPass(shadowMapSize.x, shadowMapSize.y, 'default');
+                shadowPass.name = 'SpotlightShadowPass';
+                // Reuse csm shadow map
+                shadowPass.addRenderTarget("ShadowMap".concat(id), LoadOp.CLEAR, StoreOp.STORE, new Color(1, 1, 1, 1));
+                shadowPass.addDepthStencil("ShadowDepth".concat(id), LoadOp.CLEAR, StoreOp.DISCARD);
+                shadowPass.addQueue(rendering.QueueHint.NONE, 'shadow-caster').addScene(camera, rendering.SceneFlags.OPAQUE | rendering.SceneFlags.MASK | rendering.SceneFlags.SHADOW_CASTER).useLightFrustum(light);
+
+                // Add spot-light pass
+                // Save last RenderPass to the `pass` variable
+                ++count;
+                var storeOp = count === this.shadowEnabledSpotLights.length ? depthStencilStoreOp : StoreOp.STORE;
+                pass = ppl.addRenderPass(width, height, 'default');
+                pass.name = 'SpotlightWithShadowMap';
+                pass.setViewport(viewport);
+                pass.addRenderTarget(colorName, LoadOp.LOAD);
+                pass.addDepthStencil(depthStencilName, LoadOp.LOAD, storeOp);
+                pass.addTexture("ShadowMap".concat(id), 'cc_spotShadowMap');
+                var queue = pass.addQueue(rendering.QueueHint.BLEND, 'forward-add');
+                queue.addScene(camera, rendering.SceneFlags.BLEND, light);
+              }
+            } catch (err) {
+              _iterator8.e(err);
+            } finally {
+              _iterator8.f();
+            }
+            return pass;
+          }
+        }, {
+          key: "isMultipleLightPassesNeeded",
+          value: function isMultipleLightPassesNeeded() {
+            return this.shadowEnabledSpotLights.length > 0;
+          }
+        }]);
+        return ForwardLighting;
+      }();
+      var BuiltinForwardPassBuilder = exports('BuiltinForwardPassBuilder', /*#__PURE__*/function () {
+        function BuiltinForwardPassBuilder() {
+          _classCallCheck(this, BuiltinForwardPassBuilder);
+          _defineProperty(this, "forwardLighting", new ForwardLighting());
+          _defineProperty(this, "_viewport", new Viewport());
+          _defineProperty(this, "_clearColor", new Color(0, 0, 0, 1));
+          _defineProperty(this, "_reflectionProbeClearColor", new Vec3(0, 0, 0));
+        }
+        _createClass(BuiltinForwardPassBuilder, [{
+          key: "getConfigOrder",
+          value: function getConfigOrder() {
+            return BuiltinForwardPassBuilder.ConfigOrder;
+          }
+        }, {
+          key: "getRenderOrder",
+          value: function getRenderOrder() {
+            return BuiltinForwardPassBuilder.RenderOrder;
+          }
+        }, {
+          key: "configCamera",
+          value: function configCamera(camera, pipelineConfigs, cameraConfigs) {
+            // Shadow
+            cameraConfigs.enableMainLightShadowMap = pipelineConfigs.shadowEnabled && !pipelineConfigs.usePlanarShadow && !!camera.scene && !!camera.scene.mainLight && camera.scene.mainLight.shadowEnabled;
+            cameraConfigs.enableMainLightPlanarShadowMap = pipelineConfigs.shadowEnabled && pipelineConfigs.usePlanarShadow && !!camera.scene && !!camera.scene.mainLight && camera.scene.mainLight.shadowEnabled;
+
+            // Reflection Probe
+            cameraConfigs.enablePlanarReflectionProbe = cameraConfigs.isMainGameWindow || camera.cameraUsage === CameraUsage.SCENE_VIEW || camera.cameraUsage === CameraUsage.GAME_VIEW;
+
+            // MSAA
+            cameraConfigs.enableMSAA = cameraConfigs.settings.msaa.enabled && !cameraConfigs.enableStoreSceneDepth // Cannot store MS depth, resolve depth is also not cross-platform
+            && !pipelineConfigs.isWeb // TODO(zhouzhenglong): remove this constraint
+            && !pipelineConfigs.isWebGL1;
+
+            // Forward rendering (Depend on MSAA and TBR)
+            cameraConfigs.enableSingleForwardPass = pipelineConfigs.isMobile || cameraConfigs.enableMSAA;
+            ++cameraConfigs.remainingPasses;
+          }
+        }, {
+          key: "windowResize",
+          value: function windowResize(ppl, pplConfigs, cameraConfigs, window, camera, nativeWidth, nativeHeight) {
+            var ResourceFlags = rendering.ResourceFlags;
+            var ResourceResidency = rendering.ResourceResidency;
+            var id = window.renderWindowId;
+            var settings = cameraConfigs.settings;
+            var width = cameraConfigs.enableShadingScale ? Math.max(Math.floor(nativeWidth * cameraConfigs.shadingScale), 1) : nativeWidth;
+            var height = cameraConfigs.enableShadingScale ? Math.max(Math.floor(nativeHeight * cameraConfigs.shadingScale), 1) : nativeHeight;
+
+            // MsaaRadiance
+            if (cameraConfigs.enableMSAA) {
+              // Notice: We never store multisample results.
+              // These samples are always resolved and discarded at the end of the render pass.
+              // So the ResourceResidency should be MEMORYLESS.
+              if (cameraConfigs.enableHDR) {
+                ppl.addTexture("MsaaRadiance".concat(id), TextureType.TEX2D, cameraConfigs.radianceFormat, width, height, 1, 1, 1, settings.msaa.sampleCount, ResourceFlags.COLOR_ATTACHMENT, ResourceResidency.MEMORYLESS);
+              } else {
+                ppl.addTexture("MsaaRadiance".concat(id), TextureType.TEX2D, Format.RGBA8, width, height, 1, 1, 1, settings.msaa.sampleCount, ResourceFlags.COLOR_ATTACHMENT, ResourceResidency.MEMORYLESS);
+              }
+              ppl.addTexture("MsaaDepthStencil".concat(id), TextureType.TEX2D, Format.DEPTH_STENCIL, width, height, 1, 1, 1, settings.msaa.sampleCount, ResourceFlags.DEPTH_STENCIL_ATTACHMENT, ResourceResidency.MEMORYLESS);
+            }
+
+            // Mainlight ShadowMap
+            ppl.addRenderTarget("ShadowMap".concat(id), pplConfigs.shadowMapFormat, pplConfigs.shadowMapSize.x, pplConfigs.shadowMapSize.y);
+            ppl.addDepthStencil("ShadowDepth".concat(id), Format.DEPTH_STENCIL, pplConfigs.shadowMapSize.x, pplConfigs.shadowMapSize.y);
+
+            // Spot-light shadow maps
+            if (cameraConfigs.enableSingleForwardPass) {
+              var count = pplConfigs.mobileMaxSpotLightShadowMaps;
+              for (var i = 0; i !== count; ++i) {
+                ppl.addRenderTarget("SpotShadowMap".concat(i), pplConfigs.shadowMapFormat, pplConfigs.shadowMapSize.x, pplConfigs.shadowMapSize.y);
+                ppl.addDepthStencil("SpotShadowDepth".concat(i), Format.DEPTH_STENCIL, pplConfigs.shadowMapSize.x, pplConfigs.shadowMapSize.y);
+              }
+            }
+          }
+        }, {
+          key: "setup",
+          value: function setup(ppl, pplConfigs, cameraConfigs, camera, context) {
+            var id = camera.window.renderWindowId;
+            var scene = camera.scene;
+            var mainLight = scene.mainLight;
+            --cameraConfigs.remainingPasses;
+            assert(cameraConfigs.remainingPasses >= 0);
+
+            // Forward Lighting (Light Culling)
+            this.forwardLighting.cullLights(scene, camera.frustum);
+
+            // Main Directional light CSM Shadow Map
+            if (cameraConfigs.enableMainLightShadowMap) {
+              assert(!!mainLight);
+              this._addCascadedShadowMapPass(ppl, pplConfigs, id, mainLight, camera);
+            }
+
+            // Spot light shadow maps (Mobile or MSAA)
+            if (cameraConfigs.enableSingleForwardPass) {
+              // Currently, only support 1 spot light with shadow map on mobile platform.
+              // TODO(zhouzhenglong): Relex this limitation.
+              this.forwardLighting.addSpotlightShadowPasses(ppl, camera, pplConfigs.mobileMaxSpotLightShadowMaps);
+            }
+            this._tryAddReflectionProbePasses(ppl, cameraConfigs, id, mainLight, camera.scene);
+            if (cameraConfigs.remainingPasses > 0 || cameraConfigs.enableShadingScale) {
+              context.colorName = cameraConfigs.enableShadingScale ? "ScaledRadiance0_".concat(id) : "Radiance0_".concat(id);
+              context.depthStencilName = cameraConfigs.enableShadingScale ? "ScaledSceneDepth_".concat(id) : "SceneDepth_".concat(id);
+            } else {
+              context.colorName = cameraConfigs.colorName;
+              context.depthStencilName = cameraConfigs.depthStencilName;
+            }
+            var pass = this._addForwardRadiancePasses(ppl, pplConfigs, cameraConfigs, id, camera, cameraConfigs.width, cameraConfigs.height, mainLight, context.colorName, context.depthStencilName, !cameraConfigs.enableMSAA, cameraConfigs.enableStoreSceneDepth ? StoreOp.STORE : StoreOp.DISCARD);
+            if (!cameraConfigs.enableStoreSceneDepth) {
+              context.depthStencilName = '';
+            }
+            if (cameraConfigs.remainingPasses === 0 && cameraConfigs.enableShadingScale) {
+              return addCopyToScreenPass(ppl, pplConfigs, cameraConfigs, context.colorName);
+            } else {
+              return pass;
+            }
+          }
+        }, {
+          key: "_addCascadedShadowMapPass",
+          value: function _addCascadedShadowMapPass(ppl, pplConfigs, id, light, camera) {
+            var QueueHint = rendering.QueueHint;
+            var SceneFlags = rendering.SceneFlags;
+            // ----------------------------------------------------------------
+            // Dynamic states
+            // ----------------------------------------------------------------
+            var shadowSize = ppl.pipelineSceneData.shadows.size;
+            var width = shadowSize.x;
+            var height = shadowSize.y;
+            var viewport = this._viewport;
+            viewport.left = viewport.top = 0;
+            viewport.width = width;
+            viewport.height = height;
+
+            // ----------------------------------------------------------------
+            // CSM Shadow Map
+            // ----------------------------------------------------------------
+            var pass = ppl.addRenderPass(width, height, 'default');
+            pass.name = 'CascadedShadowMap';
+            pass.addRenderTarget("ShadowMap".concat(id), LoadOp.CLEAR, StoreOp.STORE, new Color(1, 1, 1, 1));
+            pass.addDepthStencil("ShadowDepth".concat(id), LoadOp.CLEAR, StoreOp.DISCARD);
+            var csmLevel = ppl.pipelineSceneData.csmSupported ? light.csmLevel : 1;
+
+            // Add shadow map viewports
+            for (var level = 0; level !== csmLevel; ++level) {
+              getCsmMainLightViewport(light, width, height, level, this._viewport, pplConfigs.screenSpaceSignY);
+              var queue = pass.addQueue(QueueHint.NONE, 'shadow-caster');
+              if (!pplConfigs.isWebGPU) {
+                // Temporary workaround for WebGPU
+                queue.setViewport(this._viewport);
+              }
+              queue.addScene(camera, SceneFlags.OPAQUE | SceneFlags.MASK | SceneFlags.SHADOW_CASTER).useLightFrustum(light, level);
+            }
+          }
+        }, {
+          key: "_tryAddReflectionProbePasses",
+          value: function _tryAddReflectionProbePasses(ppl, cameraConfigs, id, mainLight, scene) {
+            var reflectionProbeManager = cclegacy.internal.reflectionProbeManager;
+            if (!reflectionProbeManager) {
+              return;
+            }
+            var ResourceResidency = rendering.ResourceResidency;
+            var probes = reflectionProbeManager.getProbes();
+            var maxProbeCount = 4;
+            var probeID = 0;
+            var _iterator9 = _createForOfIteratorHelper(probes),
+              _step9;
+            try {
+              for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
+                var probe = _step9.value;
+                if (!probe.needRender) {
+                  continue;
+                }
+                var area = probe.renderArea();
+                var width = Math.max(Math.floor(area.x), 1);
+                var height = Math.max(Math.floor(area.y), 1);
+                if (probe.probeType === renderer.scene.ProbeType.PLANAR) {
+                  if (!cameraConfigs.enablePlanarReflectionProbe) {
+                    continue;
+                  }
+                  var window = probe.realtimePlanarTexture.window;
+                  var colorName = "PlanarProbeRT".concat(probeID);
+                  var depthStencilName = "PlanarProbeDS".concat(probeID);
+                  // ProbeResource
+                  ppl.addRenderWindow(colorName, cameraConfigs.radianceFormat, width, height, window);
+                  ppl.addDepthStencil(depthStencilName, gfx.Format.DEPTH_STENCIL, width, height, ResourceResidency.MEMORYLESS);
+
+                  // Rendering
+                  var probePass = ppl.addRenderPass(width, height, 'default');
+                  probePass.name = "PlanarReflectionProbe".concat(probeID);
+                  this._buildReflectionProbePass(probePass, cameraConfigs, id, probe.camera, colorName, depthStencilName, mainLight, scene);
+                } else {
+                  var faceIdx, _window, _colorName, _depthStencilName, _probePass;
+                  if (EDITOR) ;
+                }
+                ++probeID;
+                if (probeID === maxProbeCount) {
+                  break;
+                }
+              }
+            } catch (err) {
+              _iterator9.e(err);
+            } finally {
+              _iterator9.f();
+            }
+          }
+        }, {
+          key: "_buildReflectionProbePass",
+          value: function _buildReflectionProbePass(pass, cameraConfigs, id, camera, colorName, depthStencilName, mainLight) {
+            var scene = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : null;
+            var QueueHint = rendering.QueueHint;
+            var SceneFlags = rendering.SceneFlags;
+            // set viewport
+            var colorStoreOp = cameraConfigs.enableMSAA ? StoreOp.DISCARD : StoreOp.STORE;
+
+            // bind output render target
+            if (forwardNeedClearColor(camera)) {
+              this._reflectionProbeClearColor.x = camera.clearColor.x;
+              this._reflectionProbeClearColor.y = camera.clearColor.y;
+              this._reflectionProbeClearColor.z = camera.clearColor.z;
+              var clearColor = rendering.packRGBE(this._reflectionProbeClearColor);
+              this._clearColor.x = clearColor.x;
+              this._clearColor.y = clearColor.y;
+              this._clearColor.z = clearColor.z;
+              this._clearColor.w = clearColor.w;
+              pass.addRenderTarget(colorName, LoadOp.CLEAR, colorStoreOp, this._clearColor);
+            } else {
+              pass.addRenderTarget(colorName, LoadOp.LOAD, colorStoreOp);
+            }
+
+            // bind depth stencil buffer
+            if (camera.clearFlag & ClearFlagBit.DEPTH_STENCIL) {
+              pass.addDepthStencil(depthStencilName, LoadOp.CLEAR, StoreOp.DISCARD, camera.clearDepth, camera.clearStencil, camera.clearFlag & ClearFlagBit.DEPTH_STENCIL);
+            } else {
+              pass.addDepthStencil(depthStencilName, LoadOp.LOAD, StoreOp.DISCARD);
+            }
+
+            // Set shadow map if enabled
+            if (cameraConfigs.enableMainLightShadowMap) {
+              pass.addTexture("ShadowMap".concat(id), 'cc_shadowMap');
+            }
+
+            // TODO(zhouzhenglong): Separate OPAQUE and MASK queue
+
+            // add opaque and mask queue
+            pass.addQueue(QueueHint.NONE, 'reflect-map') // Currently we put OPAQUE and MASK into one queue, so QueueHint is NONE
+            .addScene(camera, SceneFlags.OPAQUE | SceneFlags.MASK | SceneFlags.REFLECTION_PROBE, mainLight || undefined, scene ? scene : undefined);
+          }
+        }, {
+          key: "_addForwardRadiancePasses",
+          value: function _addForwardRadiancePasses(ppl, pplConfigs, cameraConfigs, id, camera, width, height, mainLight, colorName, depthStencilName) {
+            var disableMSAA = arguments.length > 10 && arguments[10] !== undefined ? arguments[10] : false;
+            var depthStencilStoreOp = arguments.length > 11 && arguments[11] !== undefined ? arguments[11] : StoreOp.DISCARD;
+            var QueueHint = rendering.QueueHint;
+            var SceneFlags = rendering.SceneFlags;
+            // ----------------------------------------------------------------
+            // Dynamic states
+            // ----------------------------------------------------------------
+            // Prepare camera clear color
+            var clearColor = camera.clearColor; // Reduce C++/TS interop
+            this._clearColor.x = clearColor.x;
+            this._clearColor.y = clearColor.y;
+            this._clearColor.z = clearColor.z;
+            this._clearColor.w = clearColor.w;
+
+            // Prepare camera viewport
+            var viewport = camera.viewport; // Reduce C++/TS interop
+            this._viewport.left = Math.round(viewport.x * width);
+            this._viewport.top = Math.round(viewport.y * height);
+            // Here we must use camera.viewport.width instead of camera.viewport.z, which
+            // is undefined on native platform. The same as camera.viewport.height.
+            this._viewport.width = Math.max(Math.round(viewport.width * width), 1);
+            this._viewport.height = Math.max(Math.round(viewport.height * height), 1);
+
+            // MSAA
+            var enableMSAA = !disableMSAA && cameraConfigs.enableMSAA;
+            assert(!enableMSAA || cameraConfigs.enableSingleForwardPass);
+
+            // ----------------------------------------------------------------
+            // Forward Lighting (Main Directional Light)
+            // ----------------------------------------------------------------
+            var pass = cameraConfigs.enableSingleForwardPass ? this._addForwardSingleRadiancePass(ppl, pplConfigs, cameraConfigs, id, camera, enableMSAA, width, height, mainLight, colorName, depthStencilName, depthStencilStoreOp) : this._addForwardMultipleRadiancePasses(ppl, cameraConfigs, id, camera, width, height, mainLight, colorName, depthStencilName, depthStencilStoreOp);
+
+            // Planar Shadow
+            if (cameraConfigs.enableMainLightPlanarShadowMap) {
+              this._addPlanarShadowQueue(camera, mainLight, pass);
+            }
+
+            // ----------------------------------------------------------------
+            // Forward Lighting (Blend)
+            // ----------------------------------------------------------------
+            // Add transparent queue
+
+            var sceneFlags = SceneFlags.BLEND | (camera.geometryRenderer ? SceneFlags.GEOMETRY : SceneFlags.NONE);
+            pass.addQueue(QueueHint.BLEND).addScene(camera, sceneFlags, mainLight || undefined);
+            return pass;
+          }
+        }, {
+          key: "_addForwardSingleRadiancePass",
+          value: function _addForwardSingleRadiancePass(ppl, pplConfigs, cameraConfigs, id, camera, enableMSAA, width, height, mainLight, colorName, depthStencilName, depthStencilStoreOp) {
+            assert(cameraConfigs.enableSingleForwardPass);
+            // ----------------------------------------------------------------
+            // Forward Lighting (Main Directional Light)
+            // ----------------------------------------------------------------
+            var pass;
+            if (enableMSAA) {
+              var msaaRadianceName = "MsaaRadiance".concat(id);
+              var msaaDepthStencilName = "MsaaDepthStencil".concat(id);
+              var sampleCount = cameraConfigs.settings.msaa.sampleCount;
+              var msPass = ppl.addMultisampleRenderPass(width, height, sampleCount, 0, 'default');
+              msPass.name = 'MsaaForwardPass';
+
+              // MSAA always discards depth stencil
+              this._buildForwardMainLightPass(msPass, cameraConfigs, id, camera, msaaRadianceName, msaaDepthStencilName, StoreOp.DISCARD, mainLight);
+              msPass.resolveRenderTarget(msaaRadianceName, colorName);
+              pass = msPass;
+            } else {
+              pass = ppl.addRenderPass(width, height, 'default');
+              pass.name = 'ForwardPass';
+              this._buildForwardMainLightPass(pass, cameraConfigs, id, camera, colorName, depthStencilName, depthStencilStoreOp, mainLight);
+            }
+            assert(pass !== undefined);
+
+            // Forward Lighting (Additive Lights)
+            this.forwardLighting.addLightQueues(pass, camera, pplConfigs.mobileMaxSpotLightShadowMaps);
+            return pass;
+          }
+        }, {
+          key: "_addForwardMultipleRadiancePasses",
+          value: function _addForwardMultipleRadiancePasses(ppl, cameraConfigs, id, camera, width, height, mainLight, colorName, depthStencilName, depthStencilStoreOp) {
+            assert(!cameraConfigs.enableSingleForwardPass);
+
+            // Forward Lighting (Main Directional Light)
+            var pass = ppl.addRenderPass(width, height, 'default');
+            pass.name = 'ForwardPass';
+            var firstStoreOp = this.forwardLighting.isMultipleLightPassesNeeded() ? StoreOp.STORE : depthStencilStoreOp;
+            this._buildForwardMainLightPass(pass, cameraConfigs, id, camera, colorName, depthStencilName, firstStoreOp, mainLight);
+
+            // Forward Lighting (Additive Lights)
+            pass = this.forwardLighting.addLightPasses(colorName, depthStencilName, depthStencilStoreOp, id, width, height, camera, this._viewport, ppl, pass);
+            return pass;
+          }
+        }, {
+          key: "_buildForwardMainLightPass",
+          value: function _buildForwardMainLightPass(pass, cameraConfigs, id, camera, colorName, depthStencilName, depthStencilStoreOp, mainLight) {
+            var scene = arguments.length > 8 && arguments[8] !== undefined ? arguments[8] : null;
+            var QueueHint = rendering.QueueHint;
+            var SceneFlags = rendering.SceneFlags;
+            // set viewport
+            pass.setViewport(this._viewport);
+            var colorStoreOp = cameraConfigs.enableMSAA ? StoreOp.DISCARD : StoreOp.STORE;
+
+            // bind output render target
+            if (forwardNeedClearColor(camera)) {
+              pass.addRenderTarget(colorName, LoadOp.CLEAR, colorStoreOp, this._clearColor);
+            } else {
+              pass.addRenderTarget(colorName, LoadOp.LOAD, colorStoreOp);
+            }
+
+            // bind depth stencil buffer
+            {
+              if (colorName === cameraConfigs.colorName && depthStencilName !== cameraConfigs.depthStencilName) {
+                warn('Default framebuffer cannot use custom depth stencil buffer');
+              }
+            }
+            if (camera.clearFlag & ClearFlagBit.DEPTH_STENCIL) {
+              pass.addDepthStencil(depthStencilName, LoadOp.CLEAR, depthStencilStoreOp, camera.clearDepth, camera.clearStencil, camera.clearFlag & ClearFlagBit.DEPTH_STENCIL);
+            } else {
+              pass.addDepthStencil(depthStencilName, LoadOp.LOAD, depthStencilStoreOp);
+            }
+
+            // Set shadow map if enabled
+            if (cameraConfigs.enableMainLightShadowMap) {
+              pass.addTexture("ShadowMap".concat(id), 'cc_shadowMap');
+            }
+
+            // TODO(zhouzhenglong): Separate OPAQUE and MASK queue
+
+            // add opaque and mask queue
+            pass.addQueue(QueueHint.NONE) // Currently we put OPAQUE and MASK into one queue, so QueueHint is NONE
+            .addScene(camera, SceneFlags.OPAQUE | SceneFlags.MASK, mainLight || undefined, scene ? scene : undefined);
+          }
+        }, {
+          key: "_addPlanarShadowQueue",
+          value: function _addPlanarShadowQueue(camera, mainLight, pass) {
+            var QueueHint = rendering.QueueHint;
+            var SceneFlags = rendering.SceneFlags;
+            pass.addQueue(QueueHint.BLEND, 'planar-shadow').addScene(camera, SceneFlags.SHADOW_CASTER | SceneFlags.PLANAR_SHADOW | SceneFlags.BLEND, mainLight || undefined);
+          }
+        }]);
+        return BuiltinForwardPassBuilder;
+      }());
+      _defineProperty(BuiltinForwardPassBuilder, "ConfigOrder", 100);
+      _defineProperty(BuiltinForwardPassBuilder, "RenderOrder", 100);
+      var BuiltinBloomPassBuilder = exports('BuiltinBloomPassBuilder', /*#__PURE__*/function () {
+        function BuiltinBloomPassBuilder() {
+          _classCallCheck(this, BuiltinBloomPassBuilder);
+          // Bloom
+          _defineProperty(this, "_clearColorTransparentBlack", new Color(0, 0, 0, 0));
+          _defineProperty(this, "_bloomParams", new Vec4(0, 0, 0, 0));
+          _defineProperty(this, "_bloomTexSize", new Vec4(0, 0, 0, 0));
+          _defineProperty(this, "_bloomWidths", []);
+          _defineProperty(this, "_bloomHeights", []);
+          _defineProperty(this, "_bloomTexNames", []);
+        }
+        _createClass(BuiltinBloomPassBuilder, [{
+          key: "getConfigOrder",
+          value: function getConfigOrder() {
+            return 0;
+          }
+        }, {
+          key: "getRenderOrder",
+          value: function getRenderOrder() {
+            return 200;
+          }
+        }, {
+          key: "configCamera",
+          value: function configCamera(camera, pipelineConfigs, cameraConfigs) {
+            cameraConfigs.enableBloom = cameraConfigs.settings.bloom.enabled && !!cameraConfigs.settings.bloom.material;
+            if (cameraConfigs.enableBloom) {
+              ++cameraConfigs.remainingPasses;
+            }
+          }
+        }, {
+          key: "windowResize",
+          value: function windowResize(ppl, pplConfigs, cameraConfigs, window) {
+            if (cameraConfigs.enableBloom) {
+              var id = window.renderWindowId;
+              var bloomWidth = cameraConfigs.width;
+              var bloomHeight = cameraConfigs.height;
+              for (var i = 0; i !== cameraConfigs.settings.bloom.iterations + 1; ++i) {
+                bloomWidth = Math.max(Math.floor(bloomWidth / 2), 1);
+                bloomHeight = Math.max(Math.floor(bloomHeight / 2), 1);
+                ppl.addRenderTarget("BloomTex".concat(id, "_").concat(i), cameraConfigs.radianceFormat, bloomWidth, bloomHeight);
+              }
+            }
+          }
+        }, {
+          key: "setup",
+          value: function setup(ppl, pplConfigs, cameraConfigs, camera, context, prevRenderPass) {
+            if (!cameraConfigs.enableBloom) {
+              return prevRenderPass;
+            }
+            --cameraConfigs.remainingPasses;
+            assert(cameraConfigs.remainingPasses >= 0);
+            var id = camera.window.renderWindowId;
+            assert(!!cameraConfigs.settings.bloom.material);
+            return this._addKawaseDualFilterBloomPasses(ppl, pplConfigs, cameraConfigs, cameraConfigs.settings, cameraConfigs.settings.bloom.material, id, cameraConfigs.width, cameraConfigs.height, context.colorName);
+          }
+        }, {
+          key: "_addKawaseDualFilterBloomPasses",
+          value: function _addKawaseDualFilterBloomPasses(ppl, pplConfigs, cameraConfigs, settings, bloomMaterial, id, width, height, radianceName) {
+            var QueueHint = rendering.QueueHint;
+            // Based on Kawase Dual Filter Blur. Saves bandwidth on mobile devices.
+            // eslint-disable-next-line max-len
+            // https://community.arm.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-20-66/siggraph2015_2D00_mmg_2D00_marius_2D00_slides.pdf
+
+            // Size: [prefilter(1/2), downsample(1/4), downsample(1/8), downsample(1/16), ...]
+            var iterations = settings.bloom.iterations;
+            var sizeCount = iterations + 1;
+            this._bloomWidths.length = sizeCount;
+            this._bloomHeights.length = sizeCount;
+            this._bloomWidths[0] = Math.max(Math.floor(width / 2), 1);
+            this._bloomHeights[0] = Math.max(Math.floor(height / 2), 1);
+            for (var i = 1; i !== sizeCount; ++i) {
+              this._bloomWidths[i] = Math.max(Math.floor(this._bloomWidths[i - 1] / 2), 1);
+              this._bloomHeights[i] = Math.max(Math.floor(this._bloomHeights[i - 1] / 2), 1);
+            }
+
+            // Bloom texture names
+            this._bloomTexNames.length = sizeCount;
+            for (var _i = 0; _i !== sizeCount; ++_i) {
+              this._bloomTexNames[_i] = "BloomTex".concat(id, "_").concat(_i);
+            }
+
+            // Setup bloom parameters
+            this._bloomParams.x = pplConfigs.useFloatOutput ? 1 : 0;
+            this._bloomParams.x = 0; // unused
+            this._bloomParams.z = settings.bloom.threshold;
+            this._bloomParams.w = settings.bloom.enableAlphaMask ? 1 : 0;
+
+            // Prefilter pass
+            var prefilterPass = ppl.addRenderPass(this._bloomWidths[0], this._bloomHeights[0], 'cc-bloom-prefilter');
+            prefilterPass.addRenderTarget(this._bloomTexNames[0], LoadOp.CLEAR, StoreOp.STORE, this._clearColorTransparentBlack);
+            prefilterPass.addTexture(radianceName, 'inputTexture');
+            prefilterPass.setVec4('g_platform', pplConfigs.platform);
+            prefilterPass.setVec4('bloomParams', this._bloomParams);
+            prefilterPass.addQueue(QueueHint.OPAQUE).addFullscreenQuad(bloomMaterial, 0);
+
+            // Downsample passes
+            for (var _i2 = 1; _i2 !== sizeCount; ++_i2) {
+              var downPass = ppl.addRenderPass(this._bloomWidths[_i2], this._bloomHeights[_i2], 'cc-bloom-downsample');
+              downPass.addRenderTarget(this._bloomTexNames[_i2], LoadOp.CLEAR, StoreOp.STORE, this._clearColorTransparentBlack);
+              downPass.addTexture(this._bloomTexNames[_i2 - 1], 'bloomTexture');
+              this._bloomTexSize.x = this._bloomWidths[_i2 - 1];
+              this._bloomTexSize.y = this._bloomHeights[_i2 - 1];
+              downPass.setVec4('g_platform', pplConfigs.platform);
+              downPass.setVec4('bloomTexSize', this._bloomTexSize);
+              downPass.addQueue(QueueHint.OPAQUE).addFullscreenQuad(bloomMaterial, 1);
+            }
+
+            // Upsample passes
+            for (var _i3 = iterations; _i3-- > 0;) {
+              var upPass = ppl.addRenderPass(this._bloomWidths[_i3], this._bloomHeights[_i3], 'cc-bloom-upsample');
+              upPass.addRenderTarget(this._bloomTexNames[_i3], LoadOp.CLEAR, StoreOp.STORE, this._clearColorTransparentBlack);
+              upPass.addTexture(this._bloomTexNames[_i3 + 1], 'bloomTexture');
+              this._bloomTexSize.x = this._bloomWidths[_i3 + 1];
+              this._bloomTexSize.y = this._bloomHeights[_i3 + 1];
+              upPass.setVec4('g_platform', pplConfigs.platform);
+              upPass.setVec4('bloomTexSize', this._bloomTexSize);
+              upPass.addQueue(QueueHint.OPAQUE).addFullscreenQuad(bloomMaterial, 2);
+            }
+
+            // Combine pass
+            var combinePass = ppl.addRenderPass(width, height, 'cc-bloom-combine');
+            combinePass.addRenderTarget(radianceName, LoadOp.LOAD, StoreOp.STORE);
+            combinePass.addTexture(this._bloomTexNames[0], 'bloomTexture');
+            combinePass.setVec4('g_platform', pplConfigs.platform);
+            combinePass.setVec4('bloomParams', this._bloomParams);
+            combinePass.addQueue(QueueHint.BLEND).addFullscreenQuad(bloomMaterial, 3);
+            if (cameraConfigs.remainingPasses === 0) {
+              return addCopyToScreenPass(ppl, pplConfigs, cameraConfigs, radianceName);
+            } else {
+              return combinePass;
+            }
+          }
+        }]);
+        return BuiltinBloomPassBuilder;
+      }());
+      var BuiltinToneMappingPassBuilder = exports('BuiltinToneMappingPassBuilder', /*#__PURE__*/function () {
+        function BuiltinToneMappingPassBuilder() {
+          _classCallCheck(this, BuiltinToneMappingPassBuilder);
+          _defineProperty(this, "_colorGradingTexSize", new Vec2(0, 0));
+        }
+        _createClass(BuiltinToneMappingPassBuilder, [{
+          key: "getConfigOrder",
+          value: function getConfigOrder() {
+            return 0;
+          }
+        }, {
+          key: "getRenderOrder",
+          value: function getRenderOrder() {
+            return 300;
+          }
+        }, {
+          key: "configCamera",
+          value: function configCamera(camera, pplConfigs, cameraConfigs) {
+            var settings = cameraConfigs.settings;
+            cameraConfigs.enableColorGrading = settings.colorGrading.enabled && !!settings.colorGrading.material && !!settings.colorGrading.colorGradingMap;
+            cameraConfigs.enableToneMapping = cameraConfigs.enableHDR // From Half to RGBA8
+            || cameraConfigs.enableColorGrading; // Color grading
+
+            if (cameraConfigs.enableToneMapping) {
+              ++cameraConfigs.remainingPasses;
+            }
+          }
+        }, {
+          key: "windowResize",
+          value: function windowResize(ppl, pplConfigs, cameraConfigs) {
+            if (cameraConfigs.enableColorGrading) {
+              assert(!!cameraConfigs.settings.colorGrading.material);
+              cameraConfigs.settings.colorGrading.material.setProperty('colorGradingMap', cameraConfigs.settings.colorGrading.colorGradingMap);
+            }
+          }
+        }, {
+          key: "setup",
+          value: function setup(ppl, pplConfigs, cameraConfigs, camera, context, prevRenderPass) {
+            if (!cameraConfigs.enableToneMapping) {
+              return prevRenderPass;
+            }
+            --cameraConfigs.remainingPasses;
+            assert(cameraConfigs.remainingPasses >= 0);
+            if (cameraConfigs.remainingPasses === 0) {
+              return this._addCopyAndTonemapPass(ppl, pplConfigs, cameraConfigs, cameraConfigs.width, cameraConfigs.height, context.colorName, cameraConfigs.colorName);
+            } else {
+              var id = cameraConfigs.renderWindowId;
+              var ldrColorPrefix = cameraConfigs.enableShadingScale ? "ScaledLdrColor" : "LdrColor";
+              var ldrColorName = getPingPongRenderTarget(context.colorName, ldrColorPrefix, id);
+              var radianceName = context.colorName;
+              context.colorName = ldrColorName;
+              return this._addCopyAndTonemapPass(ppl, pplConfigs, cameraConfigs, cameraConfigs.width, cameraConfigs.height, radianceName, ldrColorName);
+            }
+          }
+        }, {
+          key: "_addCopyAndTonemapPass",
+          value: function _addCopyAndTonemapPass(ppl, pplConfigs, cameraConfigs, width, height, radianceName, colorName) {
+            var pass;
+            var settings = cameraConfigs.settings;
+            if (cameraConfigs.enableColorGrading) {
+              assert(!!settings.colorGrading.material);
+              assert(!!settings.colorGrading.colorGradingMap);
+              var lutTex = settings.colorGrading.colorGradingMap;
+              this._colorGradingTexSize.x = lutTex.width;
+              this._colorGradingTexSize.y = lutTex.height;
+              var isSquareMap = lutTex.width === lutTex.height;
+              if (isSquareMap) {
+                pass = ppl.addRenderPass(width, height, 'cc-color-grading-8x8');
+              } else {
+                pass = ppl.addRenderPass(width, height, 'cc-color-grading-nx1');
+              }
+              pass.addRenderTarget(colorName, LoadOp.CLEAR, StoreOp.STORE, sClearColorTransparentBlack);
+              pass.addTexture(radianceName, 'sceneColorMap');
+              pass.setVec4('g_platform', pplConfigs.platform);
+              pass.setVec2('lutTextureSize', this._colorGradingTexSize);
+              pass.setFloat('contribute', settings.colorGrading.contribute);
+              pass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(settings.colorGrading.material, isSquareMap ? 1 : 0);
+            } else {
+              pass = ppl.addRenderPass(width, height, 'cc-tone-mapping');
+              pass.addRenderTarget(colorName, LoadOp.CLEAR, StoreOp.STORE, sClearColorTransparentBlack);
+              pass.addTexture(radianceName, 'inputTexture');
+              pass.setVec4('g_platform', pplConfigs.platform);
+              if (settings.toneMapping.material) {
+                pass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(settings.toneMapping.material, 0);
+              } else {
+                assert(!!cameraConfigs.copyAndTonemapMaterial);
+                pass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(cameraConfigs.copyAndTonemapMaterial, 0);
+              }
+            }
+            return pass;
+          }
+        }]);
+        return BuiltinToneMappingPassBuilder;
+      }());
+      var BuiltinFXAAPassBuilder = exports('BuiltinFXAAPassBuilder', /*#__PURE__*/function () {
+        function BuiltinFXAAPassBuilder() {
+          _classCallCheck(this, BuiltinFXAAPassBuilder);
+          // FXAA
+          _defineProperty(this, "_fxaaParams", new Vec4(0, 0, 0, 0));
+        }
+        _createClass(BuiltinFXAAPassBuilder, [{
+          key: "getConfigOrder",
+          value: function getConfigOrder() {
+            return 0;
+          }
+        }, {
+          key: "getRenderOrder",
+          value: function getRenderOrder() {
+            return 400;
+          }
+        }, {
+          key: "configCamera",
+          value: function configCamera(camera, pplConfigs, cameraConfigs) {
+            cameraConfigs.enableFXAA = cameraConfigs.settings.fxaa.enabled && !!cameraConfigs.settings.fxaa.material;
+            if (cameraConfigs.enableFXAA) {
+              ++cameraConfigs.remainingPasses;
+            }
+          }
+        }, {
+          key: "setup",
+          value: function setup(ppl, pplConfigs, cameraConfigs, camera, context, prevRenderPass) {
+            if (!cameraConfigs.enableFXAA) {
+              return prevRenderPass;
+            }
+            --cameraConfigs.remainingPasses;
+            assert(cameraConfigs.remainingPasses >= 0);
+            var id = cameraConfigs.renderWindowId;
+            var ldrColorPrefix = cameraConfigs.enableShadingScale ? "ScaledLdrColor" : "LdrColor";
+            var ldrColorName = getPingPongRenderTarget(context.colorName, ldrColorPrefix, id);
+            assert(!!cameraConfigs.settings.fxaa.material);
+            if (cameraConfigs.remainingPasses === 0) {
+              if (cameraConfigs.enableShadingScale) {
+                this._addFxaaPass(ppl, pplConfigs, cameraConfigs.settings.fxaa.material, cameraConfigs.width, cameraConfigs.height, context.colorName, ldrColorName);
+                return addCopyToScreenPass(ppl, pplConfigs, cameraConfigs, ldrColorName);
+              } else {
+                assert(cameraConfigs.width === cameraConfigs.nativeWidth);
+                assert(cameraConfigs.height === cameraConfigs.nativeHeight);
+                return this._addFxaaPass(ppl, pplConfigs, cameraConfigs.settings.fxaa.material, cameraConfigs.width, cameraConfigs.height, context.colorName, cameraConfigs.colorName);
+              }
+            } else {
+              var inputColorName = context.colorName;
+              context.colorName = ldrColorName;
+              var lastPass = this._addFxaaPass(ppl, pplConfigs, cameraConfigs.settings.fxaa.material, cameraConfigs.width, cameraConfigs.height, inputColorName, ldrColorName);
+              return lastPass;
+            }
+          }
+        }, {
+          key: "_addFxaaPass",
+          value: function _addFxaaPass(ppl, pplConfigs, fxaaMaterial, width, height, ldrColorName, colorName) {
+            this._fxaaParams.x = width;
+            this._fxaaParams.y = height;
+            this._fxaaParams.z = 1 / width;
+            this._fxaaParams.w = 1 / height;
+            var pass = ppl.addRenderPass(width, height, 'cc-fxaa');
+            pass.addRenderTarget(colorName, LoadOp.CLEAR, StoreOp.STORE, sClearColorTransparentBlack);
+            pass.addTexture(ldrColorName, 'sceneColorMap');
+            pass.setVec4('g_platform', pplConfigs.platform);
+            pass.setVec4('texSize', this._fxaaParams);
+            pass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(fxaaMaterial, 0);
+            return pass;
+          }
+        }]);
+        return BuiltinFXAAPassBuilder;
+      }());
+      var BuiltinFsrPassBuilder = exports('BuiltinFsrPassBuilder', /*#__PURE__*/function () {
+        function BuiltinFsrPassBuilder() {
+          _classCallCheck(this, BuiltinFsrPassBuilder);
+          // FSR
+          _defineProperty(this, "_fsrParams", new Vec4(0, 0, 0, 0));
+          _defineProperty(this, "_fsrTexSize", new Vec4(0, 0, 0, 0));
+        }
+        _createClass(BuiltinFsrPassBuilder, [{
+          key: "getConfigOrder",
+          value: function getConfigOrder() {
+            return 0;
+          }
+        }, {
+          key: "getRenderOrder",
+          value: function getRenderOrder() {
+            return 500;
+          }
+        }, {
+          key: "configCamera",
+          value: function configCamera(camera, pplConfigs, cameraConfigs) {
+            // FSR (Depend on Shading scale)
+            cameraConfigs.enableFSR = cameraConfigs.settings.fsr.enabled && !!cameraConfigs.settings.fsr.material && cameraConfigs.enableShadingScale && cameraConfigs.shadingScale < 1.0;
+            if (cameraConfigs.enableFSR) {
+              ++cameraConfigs.remainingPasses;
+            }
+          }
+        }, {
+          key: "setup",
+          value: function setup(ppl, pplConfigs, cameraConfigs, camera, context, prevRenderPass) {
+            if (!cameraConfigs.enableFSR) {
+              return prevRenderPass;
+            }
+            --cameraConfigs.remainingPasses;
+            var inputColorName = context.colorName;
+            var outputColorName = cameraConfigs.remainingPasses === 0 ? cameraConfigs.colorName : getPingPongRenderTarget(context.colorName, 'UiColor', cameraConfigs.renderWindowId);
+            context.colorName = outputColorName;
+            assert(!!cameraConfigs.settings.fsr.material);
+            return this._addFsrPass(ppl, pplConfigs, cameraConfigs, cameraConfigs.settings, cameraConfigs.settings.fsr.material, cameraConfigs.renderWindowId, cameraConfigs.width, cameraConfigs.height, inputColorName, cameraConfigs.nativeWidth, cameraConfigs.nativeHeight, outputColorName);
+          }
+        }, {
+          key: "_addFsrPass",
+          value: function _addFsrPass(ppl, pplConfigs, cameraConfigs, settings, fsrMaterial, id, width, height, inputColorName, nativeWidth, nativeHeight, outputColorName) {
+            this._fsrTexSize.x = width;
+            this._fsrTexSize.y = height;
+            this._fsrTexSize.z = nativeWidth;
+            this._fsrTexSize.w = nativeHeight;
+            this._fsrParams.x = clamp(1.0 - settings.fsr.sharpness, 0.02, 0.98);
+            var uiColorPrefix = 'UiColor';
+            var fsrColorName = getPingPongRenderTarget(outputColorName, uiColorPrefix, id);
+            var easuPass = ppl.addRenderPass(nativeWidth, nativeHeight, 'cc-fsr-easu');
+            easuPass.addRenderTarget(fsrColorName, LoadOp.CLEAR, StoreOp.STORE, sClearColorTransparentBlack);
+            easuPass.addTexture(inputColorName, 'outputResultMap');
+            easuPass.setVec4('g_platform', pplConfigs.platform);
+            easuPass.setVec4('fsrTexSize', this._fsrTexSize);
+            easuPass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(fsrMaterial, 0);
+            var rcasPass = ppl.addRenderPass(nativeWidth, nativeHeight, 'cc-fsr-rcas');
+            rcasPass.addRenderTarget(outputColorName, LoadOp.CLEAR, StoreOp.STORE, sClearColorTransparentBlack);
+            rcasPass.addTexture(fsrColorName, 'outputResultMap');
+            rcasPass.setVec4('g_platform', pplConfigs.platform);
+            rcasPass.setVec4('fsrTexSize', this._fsrTexSize);
+            rcasPass.setVec4('fsrParams', this._fsrParams);
+            rcasPass.addQueue(rendering.QueueHint.OPAQUE).addFullscreenQuad(fsrMaterial, 1);
+            return rcasPass;
+          }
+        }]);
+        return BuiltinFsrPassBuilder;
+      }());
+      var BuiltinUiPassBuilder = exports('BuiltinUiPassBuilder', /*#__PURE__*/function () {
+        function BuiltinUiPassBuilder() {
+          _classCallCheck(this, BuiltinUiPassBuilder);
+        }
+        _createClass(BuiltinUiPassBuilder, [{
+          key: "getConfigOrder",
+          value: function getConfigOrder() {
+            return 0;
+          }
+        }, {
+          key: "getRenderOrder",
+          value: function getRenderOrder() {
+            return 1000;
+          }
+        }, {
+          key: "setup",
+          value: function setup(ppl, pplConfigs, cameraConfigs, camera, context, prevRenderPass) {
+            assert(!!prevRenderPass);
+            var flags = rendering.SceneFlags.UI;
+            if (cameraConfigs.enableProfiler) {
+              flags |= rendering.SceneFlags.PROFILER;
+              prevRenderPass.showStatistics = true;
+            }
+            prevRenderPass.addQueue(rendering.QueueHint.BLEND, 'default', 'default').addScene(camera, flags);
+            return prevRenderPass;
+          }
+        }]);
+        return BuiltinUiPassBuilder;
+      }());
+      if (rendering) {
+        var QueueHint = rendering.QueueHint,
+          SceneFlags = rendering.SceneFlags;
+        var BuiltinPipelineBuilder = /*#__PURE__*/function () {
+          function BuiltinPipelineBuilder() {
+            _classCallCheck(this, BuiltinPipelineBuilder);
+            _defineProperty(this, "_pipelineEvent", cclegacy.director.root.pipelineEvent);
+            _defineProperty(this, "_forwardPass", new BuiltinForwardPassBuilder());
+            _defineProperty(this, "_bloomPass", new BuiltinBloomPassBuilder());
+            _defineProperty(this, "_toneMappingPass", new BuiltinToneMappingPassBuilder());
+            _defineProperty(this, "_fxaaPass", new BuiltinFXAAPassBuilder());
+            _defineProperty(this, "_fsrPass", new BuiltinFsrPassBuilder());
+            _defineProperty(this, "_uiPass", new BuiltinUiPassBuilder());
+            // Internal cached resources
+            _defineProperty(this, "_clearColor", new Color(0, 0, 0, 1));
+            _defineProperty(this, "_viewport", new Viewport());
+            _defineProperty(this, "_configs", new PipelineConfigs());
+            _defineProperty(this, "_cameraConfigs", new CameraConfigs());
+            // Materials
+            _defineProperty(this, "_copyAndTonemapMaterial", new Material());
+            // Internal States
+            _defineProperty(this, "_initialized", false);
+            // TODO(zhouzhenglong): Make default effect asset loading earlier and remove this flag
+            _defineProperty(this, "_passBuilders", []);
+          }
+          _createClass(BuiltinPipelineBuilder, [{
+            key: "_setupPipelinePreview",
+            value: function _setupPipelinePreview(camera, cameraConfigs) {
+              var isEditorView = camera.cameraUsage === CameraUsage.SCENE_VIEW || camera.cameraUsage === CameraUsage.PREVIEW;
+              if (isEditorView) {
+                var editorSettings = rendering.getEditorPipelineSettings();
+                if (editorSettings) {
+                  cameraConfigs.settings = editorSettings;
+                } else {
+                  cameraConfigs.settings = defaultSettings;
+                }
+              } else {
+                if (camera.pipelineSettings) {
+                  cameraConfigs.settings = camera.pipelineSettings;
+                } else {
+                  cameraConfigs.settings = defaultSettings;
+                }
+              }
+            }
+          }, {
+            key: "_preparePipelinePasses",
+            value: function _preparePipelinePasses(cameraConfigs) {
+              var passBuilders = this._passBuilders;
+              passBuilders.length = 0;
+              var settings = cameraConfigs.settings;
+              if (settings._passes) {
+                var _iterator10 = _createForOfIteratorHelper(settings._passes),
+                  _step10;
+                try {
+                  for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
+                    var pass = _step10.value;
+                    passBuilders.push(pass);
+                  }
+                } catch (err) {
+                  _iterator10.e(err);
+                } finally {
+                  _iterator10.f();
+                }
+                assert(passBuilders.length === settings._passes.length);
+              }
+              passBuilders.push(this._forwardPass);
+              if (settings.bloom.enabled) {
+                passBuilders.push(this._bloomPass);
+              }
+              passBuilders.push(this._toneMappingPass);
+              if (settings.fxaa.enabled) {
+                passBuilders.push(this._fxaaPass);
+              }
+              if (settings.fsr.enabled) {
+                passBuilders.push(this._fsrPass);
+              }
+              passBuilders.push(this._uiPass);
+            }
+          }, {
+            key: "_setupBuiltinCameraConfigs",
+            value: function _setupBuiltinCameraConfigs(camera, pipelineConfigs, cameraConfigs) {
+              var window = camera.window;
+              var isMainGameWindow = camera.cameraUsage === CameraUsage.GAME && !!window.swapchain;
+
+              // Window
+              cameraConfigs.isMainGameWindow = isMainGameWindow;
+              cameraConfigs.renderWindowId = window.renderWindowId;
+
+              // Camera
+              cameraConfigs.colorName = window.colorName;
+              cameraConfigs.depthStencilName = window.depthStencilName;
+
+              // Pipeline
+              cameraConfigs.enableFullPipeline = (camera.visibility & Layers.Enum.DEFAULT) !== 0;
+              cameraConfigs.enableProfiler = isMainGameWindow;
+              cameraConfigs.remainingPasses = 0;
+
+              // Shading scale
+              cameraConfigs.shadingScale = cameraConfigs.settings.shadingScale;
+              cameraConfigs.enableShadingScale = cameraConfigs.settings.enableShadingScale && cameraConfigs.shadingScale !== 1.0;
+              cameraConfigs.nativeWidth = Math.max(Math.floor(window.width), 1);
+              cameraConfigs.nativeHeight = Math.max(Math.floor(window.height), 1);
+              cameraConfigs.width = cameraConfigs.enableShadingScale ? Math.max(Math.floor(cameraConfigs.nativeWidth * cameraConfigs.shadingScale), 1) : cameraConfigs.nativeWidth;
+              cameraConfigs.height = cameraConfigs.enableShadingScale ? Math.max(Math.floor(cameraConfigs.nativeHeight * cameraConfigs.shadingScale), 1) : cameraConfigs.nativeHeight;
+
+              // Radiance
+              cameraConfigs.enableHDR = cameraConfigs.enableFullPipeline && pipelineConfigs.useFloatOutput;
+              cameraConfigs.radianceFormat = cameraConfigs.enableHDR ? gfx.Format.RGBA16F : gfx.Format.RGBA8;
+
+              // Tone Mapping
+              cameraConfigs.copyAndTonemapMaterial = this._copyAndTonemapMaterial;
+
+              // Depth
+              cameraConfigs.enableStoreSceneDepth = false;
+            }
+          }, {
+            key: "_setupCameraConfigs",
+            value: function _setupCameraConfigs(camera, pipelineConfigs, cameraConfigs) {
+              this._setupPipelinePreview(camera, cameraConfigs);
+              this._preparePipelinePasses(cameraConfigs);
+              sortPipelinePassBuildersByConfigOrder(this._passBuilders);
+              this._setupBuiltinCameraConfigs(camera, pipelineConfigs, cameraConfigs);
+              var _iterator11 = _createForOfIteratorHelper(this._passBuilders),
+                _step11;
+              try {
+                for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
+                  var builder = _step11.value;
+                  if (builder.configCamera) {
+                    builder.configCamera(camera, pipelineConfigs, cameraConfigs);
+                  }
+                }
+              } catch (err) {
+                _iterator11.e(err);
+              } finally {
+                _iterator11.f();
+              }
+            }
+
+            // ----------------------------------------------------------------
+            // Interface
+            // ----------------------------------------------------------------
+          }, {
+            key: "windowResize",
+            value: function windowResize(ppl, window, camera, nativeWidth, nativeHeight) {
+              setupPipelineConfigs(ppl, this._configs);
+              this._setupCameraConfigs(camera, this._configs, this._cameraConfigs);
+
+              // Render Window (UI)
+              var id = window.renderWindowId;
+              ppl.addRenderWindow(this._cameraConfigs.colorName, Format.RGBA8, nativeWidth, nativeHeight, window, this._cameraConfigs.depthStencilName);
+              var width = this._cameraConfigs.width;
+              var height = this._cameraConfigs.height;
+              if (this._cameraConfigs.enableShadingScale) {
+                ppl.addDepthStencil("ScaledSceneDepth_".concat(id), Format.DEPTH_STENCIL, width, height);
+                ppl.addRenderTarget("ScaledRadiance0_".concat(id), this._cameraConfigs.radianceFormat, width, height);
+                ppl.addRenderTarget("ScaledRadiance1_".concat(id), this._cameraConfigs.radianceFormat, width, height);
+                ppl.addRenderTarget("ScaledLdrColor0_".concat(id), Format.RGBA8, width, height);
+                ppl.addRenderTarget("ScaledLdrColor1_".concat(id), Format.RGBA8, width, height);
+              } else {
+                ppl.addDepthStencil("SceneDepth_".concat(id), Format.DEPTH_STENCIL, width, height);
+                ppl.addRenderTarget("Radiance0_".concat(id), this._cameraConfigs.radianceFormat, width, height);
+                ppl.addRenderTarget("Radiance1_".concat(id), this._cameraConfigs.radianceFormat, width, height);
+                ppl.addRenderTarget("LdrColor0_".concat(id), Format.RGBA8, width, height);
+                ppl.addRenderTarget("LdrColor1_".concat(id), Format.RGBA8, width, height);
+              }
+              ppl.addRenderTarget("UiColor0_".concat(id), Format.RGBA8, nativeWidth, nativeHeight);
+              ppl.addRenderTarget("UiColor1_".concat(id), Format.RGBA8, nativeWidth, nativeHeight);
+              var _iterator12 = _createForOfIteratorHelper(this._passBuilders),
+                _step12;
+              try {
+                for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
+                  var builder = _step12.value;
+                  if (builder.windowResize) {
+                    builder.windowResize(ppl, this._configs, this._cameraConfigs, window, camera, nativeWidth, nativeHeight);
+                  }
+                }
+              } catch (err) {
+                _iterator12.e(err);
+              } finally {
+                _iterator12.f();
+              }
+            }
+          }, {
+            key: "setup",
+            value: function setup(cameras, ppl) {
+              // TODO(zhouzhenglong): Make default effect asset loading earlier and remove _initMaterials
+              if (this._initMaterials(ppl)) {
+                return;
+              }
+              // Render cameras
+              // log(`==================== One Frame ====================`);
+              var _iterator13 = _createForOfIteratorHelper(cameras),
+                _step13;
+              try {
+                for (_iterator13.s(); !(_step13 = _iterator13.n()).done;) {
+                  var camera = _step13.value;
+                  // Skip invalid camera
+                  if (!camera.scene || !camera.window) {
+                    continue;
+                  }
+                  // Setup camera configs
+                  this._setupCameraConfigs(camera, this._configs, this._cameraConfigs);
+                  // log(`Setup camera: ${camera.node!.name}, window: ${camera.window.renderWindowId}, isFull: ${this._cameraConfigs.enableFullPipeline}, `
+                  //     + `size: ${camera.window.width}x${camera.window.height}`);
+
+                  this._pipelineEvent.emit(PipelineEventType.RENDER_CAMERA_BEGIN, camera);
+
+                  // Build pipeline
+                  if (this._cameraConfigs.enableFullPipeline) {
+                    this._buildForwardPipeline(ppl, camera, camera.scene, this._passBuilders);
+                  } else {
+                    this._buildSimplePipeline(ppl, camera);
+                  }
+                  this._pipelineEvent.emit(PipelineEventType.RENDER_CAMERA_END, camera);
+                }
+              } catch (err) {
+                _iterator13.e(err);
+              } finally {
+                _iterator13.f();
+              }
+            }
+            // ----------------------------------------------------------------
+            // Pipelines
+            // ----------------------------------------------------------------
+          }, {
+            key: "_buildSimplePipeline",
+            value: function _buildSimplePipeline(ppl, camera) {
+              var width = Math.max(Math.floor(camera.window.width), 1);
+              var height = Math.max(Math.floor(camera.window.height), 1);
+              var colorName = this._cameraConfigs.colorName;
+              var depthStencilName = this._cameraConfigs.depthStencilName;
+              var viewport = camera.viewport; // Reduce C++/TS interop
+              this._viewport.left = Math.round(viewport.x * width);
+              this._viewport.top = Math.round(viewport.y * height);
+              // Here we must use camera.viewport.width instead of camera.viewport.z, which
+              // is undefined on native platform. The same as camera.viewport.height.
+              this._viewport.width = Math.max(Math.round(viewport.width * width), 1);
+              this._viewport.height = Math.max(Math.round(viewport.height * height), 1);
+              var clearColor = camera.clearColor; // Reduce C++/TS interop
+              this._clearColor.x = clearColor.x;
+              this._clearColor.y = clearColor.y;
+              this._clearColor.z = clearColor.z;
+              this._clearColor.w = clearColor.w;
+              var pass = ppl.addRenderPass(width, height, 'default');
+
+              // bind output render target
+              if (forwardNeedClearColor(camera)) {
+                pass.addRenderTarget(colorName, LoadOp.CLEAR, StoreOp.STORE, this._clearColor);
+              } else {
+                pass.addRenderTarget(colorName, LoadOp.LOAD, StoreOp.STORE);
+              }
+
+              // bind depth stencil buffer
+              if (camera.clearFlag & ClearFlagBit.DEPTH_STENCIL) {
+                pass.addDepthStencil(depthStencilName, LoadOp.CLEAR, StoreOp.DISCARD, camera.clearDepth, camera.clearStencil, camera.clearFlag & ClearFlagBit.DEPTH_STENCIL);
+              } else {
+                pass.addDepthStencil(depthStencilName, LoadOp.LOAD, StoreOp.DISCARD);
+              }
+              pass.setViewport(this._viewport);
+
+              // The opaque queue is used for Reflection probe preview
+              pass.addQueue(QueueHint.OPAQUE).addScene(camera, SceneFlags.OPAQUE);
+
+              // The blend queue is used for UI and Gizmos
+              var flags = SceneFlags.BLEND | SceneFlags.UI;
+              if (this._cameraConfigs.enableProfiler) {
+                flags |= SceneFlags.PROFILER;
+                pass.showStatistics = true;
+              }
+              pass.addQueue(QueueHint.BLEND).addScene(camera, flags);
+            }
+          }, {
+            key: "_buildForwardPipeline",
+            value: function _buildForwardPipeline(ppl, camera, scene, passBuilders) {
+              sortPipelinePassBuildersByRenderOrder(passBuilders);
+              var context = {
+                colorName: '',
+                depthStencilName: ''
+              };
+              var lastPass = undefined;
+              var _iterator14 = _createForOfIteratorHelper(passBuilders),
+                _step14;
+              try {
+                for (_iterator14.s(); !(_step14 = _iterator14.n()).done;) {
+                  var builder = _step14.value;
+                  if (builder.setup) {
+                    lastPass = builder.setup(ppl, this._configs, this._cameraConfigs, camera, context, lastPass);
+                  }
+                }
+              } catch (err) {
+                _iterator14.e(err);
+              } finally {
+                _iterator14.f();
+              }
+              assert(this._cameraConfigs.remainingPasses === 0);
+            }
+          }, {
+            key: "_initMaterials",
+            value: function _initMaterials(ppl) {
+              if (this._initialized) {
+                return 0;
+              }
+              setupPipelineConfigs(ppl, this._configs);
+
+              // When add new effect asset, please add its uuid to the dependentAssets in cc.config.json.
+              this._copyAndTonemapMaterial._uuid = "builtin-pipeline-tone-mapping-material";
+              this._copyAndTonemapMaterial.initialize({
+                effectName: 'pipeline/post-process/tone-mapping'
+              });
+              if (this._copyAndTonemapMaterial.effectAsset) {
+                this._initialized = true;
+              }
+              return this._initialized ? 0 : 1;
+            }
+          }]);
+          return BuiltinPipelineBuilder;
+        }();
+        rendering.setCustomPipeline('Builtin', new BuiltinPipelineBuilder());
+      } // if (rendering)
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/internal", ['./builtin-pipeline-settings.ts', './builtin-pipeline-types.ts', './builtin-pipeline.ts'], function () {
+  return {
+    setters: [null, null, null],
+    execute: function () {}
+  };
+});
 
 (function(r) {
   r('virtual:///prerequisite-imports/internal', 'chunks:///_virtual/internal'); 
