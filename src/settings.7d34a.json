@@ -73,15 +73,15 @@
                 "bit": 16
             },
             {
-                "name": "layer17",
+                "name": "layer17_Mini3D",
                 "bit": 17
             },
             {
-                "name": "layer18",
+                "name": "layer18_MiniUI2D",
                 "bit": 18
             },
             {
-                "name": "layer19",
+                "name": "layer19_GlobolUI",
                 "bit": 19
             }
         ],
@@ -143,8 +143,8 @@
         ],
         "bundleVers": {
             "internal": "89424",
-            "main": "1cfd5",
-            "resources": "92d27"
+            "main": "58491",
+            "resources": "6fa9c"
         },
         "preloadAssets": [],
         "projectBundles": [

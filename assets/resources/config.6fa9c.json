@@ -357,81 +357,6 @@
             "cc.Prefab",
             1
         ],
-        "e2e325c9-bdf3-4641-909d-4f94c12e3749": [
-            "spine/Base",
-            "sp.SkeletonData",
-            1
-        ],
-        "f39b0df8-83d2-45f5-aae8-cc29034239c7": [
-            "spine/Big pig",
-            "cc.Asset",
-            1
-        ],
-        "8fc7b31c-5fd2-4e79-803f-cda1c6a72932": [
-            "spine/Big pig",
-            "sp.SkeletonData",
-            1
-        ],
-        "9866086c-1637-4576-b031-a4b355435846": [
-            "spine/Big pig",
-            "cc.ImageAsset",
-            1
-        ],
-        "9866086c-1637-4576-b031-a4b355435846@6c48a": [
-            "spine/Big pig/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "9866086c-1637-4576-b031-a4b355435846@f9941": [
-            "spine/Big pig/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "21e29b5a-6d21-46aa-bc52-615ca20f91cd": [
-            "spine/BigWinPig",
-            "cc.Asset",
-            1
-        ],
-        "f3171ecf-7c28-47d2-b439-4b101cc70239": [
-            "spine/BigWinPig",
-            "sp.SkeletonData",
-            1
-        ],
-        "037dfb80-49b2-46e2-b14d-c8fe54af24f7": [
-            "spine/BigWinPig",
-            "cc.ImageAsset",
-            1
-        ],
-        "037dfb80-49b2-46e2-b14d-c8fe54af24f7@6c48a": [
-            "spine/BigWinPig/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "e23e9e67-271b-4b56-90a3-1c8bdf36d8ab": [
-            "spine/Boss",
-            "cc.Asset",
-            1
-        ],
-        "42540e59-316a-42ff-8767-27d75a103890": [
-            "spine/Boss",
-            "sp.SkeletonData",
-            1
-        ],
-        "c8c4df4a-63d5-4b85-bf36-78ab3799ade2": [
-            "spine/Boss",
-            "cc.ImageAsset",
-            1
-        ],
-        "c8c4df4a-63d5-4b85-bf36-78ab3799ade2@6c48a": [
-            "spine/Boss/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "c8c4df4a-63d5-4b85-bf36-78ab3799ade2@f9941": [
-            "spine/Boss/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
         "744b044c-20b3-4f43-856e-3a3ae300dcd2": [
             "spine/BulletHole.atlas",
             "cc.TextAsset",
@@ -454,81 +379,6 @@
         ],
         "b4d90766-453b-47e1-bb5f-e5320f03feaf@f9941": [
             "spine/BulletHole/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "3fe1aec7-3a6b-4e3f-88c2-a63f6ea8201f": [
-            "spine/ddakji",
-            "cc.Asset",
-            1
-        ],
-        "aee37df0-7bc7-4146-8c97-1ddf5a6c76df": [
-            "spine/ddakji",
-            "sp.SkeletonData",
-            1
-        ],
-        "18e350f5-5ded-43be-a832-4a5f6e64c54e": [
-            "spine/ddakji",
-            "cc.ImageAsset",
-            1
-        ],
-        "18e350f5-5ded-43be-a832-4a5f6e64c54e@6c48a": [
-            "spine/ddakji/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "18e350f5-5ded-43be-a832-4a5f6e64c54e@f9941": [
-            "spine/ddakji/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "ee9c2b17-8388-4acb-8fe2-9a86779e8ffc": [
-            "spine/Doll-full",
-            "cc.Asset",
-            1
-        ],
-        "cf1ad7c6-ba4a-4f20-ba9d-feff1c531ae1": [
-            "spine/Doll-full",
-            "sp.SkeletonData",
-            1
-        ],
-        "d716d78c-b585-41f9-be7b-4149b668928b": [
-            "spine/Doll-full",
-            "cc.ImageAsset",
-            1
-        ],
-        "d716d78c-b585-41f9-be7b-4149b668928b@6c48a": [
-            "spine/Doll-full/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "d716d78c-b585-41f9-be7b-4149b668928b@f9941": [
-            "spine/Doll-full/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "d43a7c42-8f65-4180-b3f1-5c0bbe9df7ad": [
-            "spine/Doll",
-            "cc.Asset",
-            1
-        ],
-        "8882c733-cfaf-4eec-933d-fccac4eb4973": [
-            "spine/Doll",
-            "sp.SkeletonData",
-            1
-        ],
-        "a4baa5a5-ec26-46b0-aea9-bb2e2e30b696": [
-            "spine/Doll",
-            "cc.ImageAsset",
-            1
-        ],
-        "a4baa5a5-ec26-46b0-aea9-bb2e2e30b696@6c48a": [
-            "spine/Doll/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "a4baa5a5-ec26-46b0-aea9-bb2e2e30b696@f9941": [
-            "spine/Doll/spriteFrame",
             "cc.SpriteFrame",
             1
         ],
@@ -647,31 +497,6 @@
             "cc.SpriteFrame",
             1
         ],
-        "b9525461-8803-48ce-9fc9-827652e5a3f2": [
-            "spine/Main",
-            "cc.Asset",
-            1
-        ],
-        "dd93d7c2-3f27-46d4-97c5-ea14f6074ac9": [
-            "spine/Main",
-            "sp.SkeletonData",
-            1
-        ],
-        "a64c583b-0d33-457e-ae19-2e6323569b34": [
-            "spine/Main",
-            "cc.ImageAsset",
-            1
-        ],
-        "a64c583b-0d33-457e-ae19-2e6323569b34@6c48a": [
-            "spine/Main/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "a64c583b-0d33-457e-ae19-2e6323569b34@f9941": [
-            "spine/Main/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
         "5f284f84-b1e1-42e7-a60e-888d89623649": [
             "spine/MoneyVFX",
             "cc.Asset",
@@ -690,146 +515,6 @@
         "7cb785f6-3cb5-42e6-8f57-71abe8d613e7@6c48a": [
             "spine/MoneyVFX/texture",
             "cc.Texture2D",
-            1
-        ],
-        "d6013161-7bcf-431c-a5bf-f9fe8b971b9b": [
-            "spine/NPC-spine",
-            "cc.Asset",
-            1
-        ],
-        "f45f5c8a-081e-4836-b5a4-cf6104e1a97f": [
-            "spine/NPC-spine",
-            "sp.SkeletonData",
-            1
-        ],
-        "9dac606a-3dca-4d43-bdda-e36a6bf296d0": [
-            "spine/NPC-spine",
-            "cc.ImageAsset",
-            1
-        ],
-        "9dac606a-3dca-4d43-bdda-e36a6bf296d0@6c48a": [
-            "spine/NPC-spine/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "9dac606a-3dca-4d43-bdda-e36a6bf296d0@f9941": [
-            "spine/NPC-spine/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "d666c190-76b1-4bad-a04f-02f41d696275": [
-            "spine/NPC",
-            "cc.Asset",
-            1
-        ],
-        "7f151e91-0989-4785-a3e9-d7d0aa2494e3": [
-            "spine/NPC",
-            "sp.SkeletonData",
-            1
-        ],
-        "1dbdc04e-8167-4888-aaa2-afacee4ced7e": [
-            "spine/NPC",
-            "cc.ImageAsset",
-            1
-        ],
-        "1dbdc04e-8167-4888-aaa2-afacee4ced7e@6c48a": [
-            "spine/NPC/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "1dbdc04e-8167-4888-aaa2-afacee4ced7e@f9941": [
-            "spine/NPC/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "09cf891c-faec-4329-b03c-fffbafabfeb7": [
-            "spine/pig",
-            "cc.Asset",
-            1
-        ],
-        "042a31ff-2144-4d36-957d-e7bf6cc60399": [
-            "spine/pig",
-            "sp.SkeletonData",
-            1
-        ],
-        "969f505d-6952-46b1-ab55-d7a198ef50e7": [
-            "spine/pig",
-            "cc.ImageAsset",
-            1
-        ],
-        "969f505d-6952-46b1-ab55-d7a198ef50e7@6c48a": [
-            "spine/pig/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "969f505d-6952-46b1-ab55-d7a198ef50e7@f9941": [
-            "spine/pig/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "326fad74-0e68-4869-a333-3f37567be79a": [
-            "spine/Stone",
-            "cc.Asset",
-            1
-        ],
-        "f0b5995c-a908-4c96-8971-eba9701ace78": [
-            "spine/Stone",
-            "sp.SkeletonData",
-            1
-        ],
-        "37518737-47e8-42a0-870b-b01f149d7bbc": [
-            "spine/Stone",
-            "cc.ImageAsset",
-            1
-        ],
-        "37518737-47e8-42a0-870b-b01f149d7bbc@6c48a": [
-            "spine/Stone/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "37518737-47e8-42a0-870b-b01f149d7bbc@f9941": [
-            "spine/Stone/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "4ab912be-10a9-4833-a7d9-9beffc60abb1": [
-            "spine/Stone_2",
-            "cc.ImageAsset",
-            1
-        ],
-        "4ab912be-10a9-4833-a7d9-9beffc60abb1@6c48a": [
-            "spine/Stone_2/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "4ab912be-10a9-4833-a7d9-9beffc60abb1@f9941": [
-            "spine/Stone_2/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "4ad544fa-72a0-4548-9691-0f06f65a8eab": [
-            "spine/ticket",
-            "cc.Asset",
-            1
-        ],
-        "20d642c9-ac35-4924-a80e-fc4c6e46ef74": [
-            "spine/ticket",
-            "sp.SkeletonData",
-            1
-        ],
-        "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3": [
-            "spine/ticket",
-            "cc.ImageAsset",
-            1
-        ],
-        "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3@6c48a": [
-            "spine/ticket/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3@f9941": [
-            "spine/ticket/spriteFrame",
-            "cc.SpriteFrame",
             1
         ],
         "cc2f519b-1606-466a-89c6-1e438b73314f": [
@@ -860,6 +545,321 @@
         "64e8c2de-1680-4670-8611-5b57c91ec2d1": [
             "共用元件/系統訊息",
             "cc.Prefab",
+            1
+        ],
+        "e2e325c9-bdf3-4641-909d-4f94c12e3749": [
+            "spine/Character/Base",
+            "sp.SkeletonData",
+            1
+        ],
+        "f39b0df8-83d2-45f5-aae8-cc29034239c7": [
+            "spine/Character/Big pig",
+            "cc.Asset",
+            1
+        ],
+        "8fc7b31c-5fd2-4e79-803f-cda1c6a72932": [
+            "spine/Character/Big pig",
+            "sp.SkeletonData",
+            1
+        ],
+        "9866086c-1637-4576-b031-a4b355435846": [
+            "spine/Character/Big pig",
+            "cc.ImageAsset",
+            1
+        ],
+        "9866086c-1637-4576-b031-a4b355435846@6c48a": [
+            "spine/Character/Big pig/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "9866086c-1637-4576-b031-a4b355435846@f9941": [
+            "spine/Character/Big pig/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "21e29b5a-6d21-46aa-bc52-615ca20f91cd": [
+            "spine/Character/BigWinPig",
+            "cc.Asset",
+            1
+        ],
+        "f3171ecf-7c28-47d2-b439-4b101cc70239": [
+            "spine/Character/BigWinPig",
+            "sp.SkeletonData",
+            1
+        ],
+        "037dfb80-49b2-46e2-b14d-c8fe54af24f7": [
+            "spine/Character/BigWinPig",
+            "cc.ImageAsset",
+            1
+        ],
+        "037dfb80-49b2-46e2-b14d-c8fe54af24f7@6c48a": [
+            "spine/Character/BigWinPig/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "ee9c2b17-8388-4acb-8fe2-9a86779e8ffc": [
+            "spine/Character/Doll-full",
+            "cc.Asset",
+            1
+        ],
+        "cf1ad7c6-ba4a-4f20-ba9d-feff1c531ae1": [
+            "spine/Character/Doll-full",
+            "sp.SkeletonData",
+            1
+        ],
+        "d716d78c-b585-41f9-be7b-4149b668928b": [
+            "spine/Character/Doll-full",
+            "cc.ImageAsset",
+            1
+        ],
+        "d716d78c-b585-41f9-be7b-4149b668928b@6c48a": [
+            "spine/Character/Doll-full/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "d716d78c-b585-41f9-be7b-4149b668928b@f9941": [
+            "spine/Character/Doll-full/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "d6013161-7bcf-431c-a5bf-f9fe8b971b9b": [
+            "spine/Character/NPC-spine",
+            "cc.Asset",
+            1
+        ],
+        "f45f5c8a-081e-4836-b5a4-cf6104e1a97f": [
+            "spine/Character/NPC-spine",
+            "sp.SkeletonData",
+            1
+        ],
+        "9dac606a-3dca-4d43-bdda-e36a6bf296d0": [
+            "spine/Character/NPC-spine",
+            "cc.ImageAsset",
+            1
+        ],
+        "9dac606a-3dca-4d43-bdda-e36a6bf296d0@6c48a": [
+            "spine/Character/NPC-spine/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "9dac606a-3dca-4d43-bdda-e36a6bf296d0@f9941": [
+            "spine/Character/NPC-spine/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "e23e9e67-271b-4b56-90a3-1c8bdf36d8ab": [
+            "spine/Symbol/Boss",
+            "cc.Asset",
+            1
+        ],
+        "42540e59-316a-42ff-8767-27d75a103890": [
+            "spine/Symbol/Boss",
+            "sp.SkeletonData",
+            1
+        ],
+        "c8c4df4a-63d5-4b85-bf36-78ab3799ade2": [
+            "spine/Symbol/Boss",
+            "cc.ImageAsset",
+            1
+        ],
+        "c8c4df4a-63d5-4b85-bf36-78ab3799ade2@6c48a": [
+            "spine/Symbol/Boss/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "c8c4df4a-63d5-4b85-bf36-78ab3799ade2@f9941": [
+            "spine/Symbol/Boss/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "3fe1aec7-3a6b-4e3f-88c2-a63f6ea8201f": [
+            "spine/Symbol/ddakji",
+            "cc.Asset",
+            1
+        ],
+        "aee37df0-7bc7-4146-8c97-1ddf5a6c76df": [
+            "spine/Symbol/ddakji",
+            "sp.SkeletonData",
+            1
+        ],
+        "18e350f5-5ded-43be-a832-4a5f6e64c54e": [
+            "spine/Symbol/ddakji",
+            "cc.ImageAsset",
+            1
+        ],
+        "18e350f5-5ded-43be-a832-4a5f6e64c54e@6c48a": [
+            "spine/Symbol/ddakji/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "18e350f5-5ded-43be-a832-4a5f6e64c54e@f9941": [
+            "spine/Symbol/ddakji/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "d43a7c42-8f65-4180-b3f1-5c0bbe9df7ad": [
+            "spine/Symbol/Doll",
+            "cc.Asset",
+            1
+        ],
+        "8882c733-cfaf-4eec-933d-fccac4eb4973": [
+            "spine/Symbol/Doll",
+            "sp.SkeletonData",
+            1
+        ],
+        "a4baa5a5-ec26-46b0-aea9-bb2e2e30b696": [
+            "spine/Symbol/Doll",
+            "cc.ImageAsset",
+            1
+        ],
+        "a4baa5a5-ec26-46b0-aea9-bb2e2e30b696@6c48a": [
+            "spine/Symbol/Doll/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "a4baa5a5-ec26-46b0-aea9-bb2e2e30b696@f9941": [
+            "spine/Symbol/Doll/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "b9525461-8803-48ce-9fc9-827652e5a3f2": [
+            "spine/Symbol/Main",
+            "cc.Asset",
+            1
+        ],
+        "dd93d7c2-3f27-46d4-97c5-ea14f6074ac9": [
+            "spine/Symbol/Main",
+            "sp.SkeletonData",
+            1
+        ],
+        "a64c583b-0d33-457e-ae19-2e6323569b34": [
+            "spine/Symbol/Main",
+            "cc.ImageAsset",
+            1
+        ],
+        "a64c583b-0d33-457e-ae19-2e6323569b34@6c48a": [
+            "spine/Symbol/Main/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "a64c583b-0d33-457e-ae19-2e6323569b34@f9941": [
+            "spine/Symbol/Main/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "d666c190-76b1-4bad-a04f-02f41d696275": [
+            "spine/Symbol/NPC",
+            "cc.Asset",
+            1
+        ],
+        "7f151e91-0989-4785-a3e9-d7d0aa2494e3": [
+            "spine/Symbol/NPC",
+            "sp.SkeletonData",
+            1
+        ],
+        "1dbdc04e-8167-4888-aaa2-afacee4ced7e": [
+            "spine/Symbol/NPC",
+            "cc.ImageAsset",
+            1
+        ],
+        "1dbdc04e-8167-4888-aaa2-afacee4ced7e@6c48a": [
+            "spine/Symbol/NPC/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "1dbdc04e-8167-4888-aaa2-afacee4ced7e@f9941": [
+            "spine/Symbol/NPC/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "09cf891c-faec-4329-b03c-fffbafabfeb7": [
+            "spine/Symbol/pig",
+            "cc.Asset",
+            1
+        ],
+        "042a31ff-2144-4d36-957d-e7bf6cc60399": [
+            "spine/Symbol/pig",
+            "sp.SkeletonData",
+            1
+        ],
+        "969f505d-6952-46b1-ab55-d7a198ef50e7": [
+            "spine/Symbol/pig",
+            "cc.ImageAsset",
+            1
+        ],
+        "969f505d-6952-46b1-ab55-d7a198ef50e7@6c48a": [
+            "spine/Symbol/pig/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "969f505d-6952-46b1-ab55-d7a198ef50e7@f9941": [
+            "spine/Symbol/pig/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "326fad74-0e68-4869-a333-3f37567be79a": [
+            "spine/Symbol/Stone",
+            "cc.Asset",
+            1
+        ],
+        "f0b5995c-a908-4c96-8971-eba9701ace78": [
+            "spine/Symbol/Stone",
+            "sp.SkeletonData",
+            1
+        ],
+        "37518737-47e8-42a0-870b-b01f149d7bbc": [
+            "spine/Symbol/Stone",
+            "cc.ImageAsset",
+            1
+        ],
+        "37518737-47e8-42a0-870b-b01f149d7bbc@6c48a": [
+            "spine/Symbol/Stone/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "37518737-47e8-42a0-870b-b01f149d7bbc@f9941": [
+            "spine/Symbol/Stone/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "4ab912be-10a9-4833-a7d9-9beffc60abb1": [
+            "spine/Symbol/Stone_2",
+            "cc.ImageAsset",
+            1
+        ],
+        "4ab912be-10a9-4833-a7d9-9beffc60abb1@6c48a": [
+            "spine/Symbol/Stone_2/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "4ab912be-10a9-4833-a7d9-9beffc60abb1@f9941": [
+            "spine/Symbol/Stone_2/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "4ad544fa-72a0-4548-9691-0f06f65a8eab": [
+            "spine/Symbol/ticket",
+            "cc.Asset",
+            1
+        ],
+        "20d642c9-ac35-4924-a80e-fc4c6e46ef74": [
+            "spine/Symbol/ticket",
+            "sp.SkeletonData",
+            1
+        ],
+        "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3": [
+            "spine/Symbol/ticket",
+            "cc.ImageAsset",
+            1
+        ],
+        "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3@6c48a": [
+            "spine/Symbol/ticket/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3@f9941": [
+            "spine/Symbol/ticket/spriteFrame",
+            "cc.SpriteFrame",
             1
         ]
     },
@@ -1152,7 +1152,7 @@
     "versions": {
         "import": [
             "072ae5a22",
-            "6a6ef"
+            "d583c"
         ],
         "native": [
             "037dfb80-49b2-46e2-b14d-c8fe54af24f7",
