@@ -143,7 +143,7 @@
         ],
         "bundleVers": {
             "internal": "89424",
-            "main": "82c08",
+            "main": "2a553",
             "resources": "f43ca"
         },
         "preloadAssets": [],
@@ -172,7 +172,7 @@
             "height": 1280,
             "policy": 2
         },
-        "orientation": "auto"
+        "orientation": "portrait"
     },
     "rendering": {
         "renderPipeline": "",
