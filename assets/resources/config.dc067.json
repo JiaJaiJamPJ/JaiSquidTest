@@ -299,66 +299,6 @@
         "ffb88a8f-af62-48f4-8f1d-3cb606443a43@f9941"
     ],
     "paths": {
-        "8f0bbca4-f52d-437e-9c49-945a98608b04": [
-            "spine/Character/Doll-full",
-            "cc.Asset",
-            1
-        ],
-        "a8788329-0fe8-4d58-b400-b960f26fb683": [
-            "spine/Character/Doll-full",
-            "sp.SkeletonData",
-            1
-        ],
-        "405937fb-8c63-4b77-92a8-91064ada3378": [
-            "spine/Character/Doll-full",
-            "cc.ImageAsset",
-            1
-        ],
-        "405937fb-8c63-4b77-92a8-91064ada3378@6c48a": [
-            "spine/Character/Doll-full/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "37eb947a-6432-4cd9-b88e-665e06b3957a": [
-            "spine/Gameclear/gameclear",
-            "cc.Asset",
-            1
-        ],
-        "c02350b3-2860-4b80-bd06-ac37b2c76628": [
-            "spine/Gameclear/gameclear",
-            "sp.SkeletonData",
-            1
-        ],
-        "5c437d19-f251-4cfc-a9bd-8b8e626dbc7f": [
-            "spine/Gameclear/gameclear",
-            "cc.ImageAsset",
-            1
-        ],
-        "5c437d19-f251-4cfc-a9bd-8b8e626dbc7f@6c48a": [
-            "spine/Gameclear/gameclear/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "5c437d19-f251-4cfc-a9bd-8b8e626dbc7f@f9941": [
-            "spine/Gameclear/gameclear/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a": [
-            "spine/Gameclear/gameclear_2",
-            "cc.ImageAsset",
-            1
-        ],
-        "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a@6c48a": [
-            "spine/Gameclear/gameclear_2/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a@f9941": [
-            "spine/Gameclear/gameclear_2/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
         "d6da05bd-7ab6-479c-9282-5ebab038f977": [
             "html/index",
             "cc.TextAsset",
@@ -424,119 +364,9 @@
             "cc.Prefab",
             1
         ],
-        "744b044c-20b3-4f43-856e-3a3ae300dcd2": [
-            "spine/VFX/BulletHole.atlas",
-            "cc.TextAsset",
-            1
-        ],
-        "e487cb1e-578f-4a9f-be7f-fd42c1b73c2a": [
-            "spine/VFX/BulletHole",
-            "sp.SkeletonData",
-            1
-        ],
-        "b4d90766-453b-47e1-bb5f-e5320f03feaf": [
-            "spine/VFX/BulletHole",
-            "cc.ImageAsset",
-            1
-        ],
-        "b4d90766-453b-47e1-bb5f-e5320f03feaf@6c48a": [
-            "spine/VFX/BulletHole/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "b4d90766-453b-47e1-bb5f-e5320f03feaf@f9941": [
-            "spine/VFX/BulletHole/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "944fc2ba-ff81-415b-9db2-e898f715e6bc": [
-            "spine/VFX/fg-full",
-            "cc.Asset",
-            1
-        ],
-        "a6f529b2-d710-47ab-8257-963e0b2fd429": [
-            "spine/VFX/fg-full",
-            "sp.SkeletonData",
-            1
-        ],
-        "a1f1592b-d582-44d1-bad4-0a561d28e0a9": [
-            "spine/VFX/fg-full",
-            "cc.ImageAsset",
-            1
-        ],
-        "a1f1592b-d582-44d1-bad4-0a561d28e0a9@6c48a": [
-            "spine/VFX/fg-full/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "07b50ed5-2f23-4ba9-8471-f447d0d83b44": [
-            "spine/FG/fg-ticket",
-            "cc.Asset",
-            1
-        ],
-        "32e2c995-7cae-4b27-8015-b5ba5c43835b": [
-            "spine/FG/fg-ticket",
-            "sp.SkeletonData",
-            1
-        ],
-        "e390b34e-eb37-4829-8d3d-82346e3038b2": [
-            "spine/FG/fg-ticket",
-            "cc.ImageAsset",
-            1
-        ],
-        "e390b34e-eb37-4829-8d3d-82346e3038b2@6c48a": [
-            "spine/FG/fg-ticket/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "2352a825-571e-44c7-97e5-62e7269d981b": [
-            "spine/VFX/freegamefire.atlas",
-            "cc.TextAsset",
-            1
-        ],
-        "57244949-1f2a-4c65-91a3-49faec1028d1": [
-            "spine/VFX/freegamefire",
-            "sp.SkeletonData",
-            1
-        ],
-        "e5058b98-5619-4f77-9093-588b31b32f35": [
-            "spine/VFX/freegamefire",
-            "cc.ImageAsset",
-            1
-        ],
-        "e5058b98-5619-4f77-9093-588b31b32f35@6c48a": [
-            "spine/VFX/freegamefire/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "04bdd039-8dad-4ed4-8f6e-426690861960": [
-            "spine/VFX/freegame_ani",
-            "cc.Asset",
-            1
-        ],
-        "be354b54-bcd7-490f-afc3-c7f96e5cab68": [
-            "spine/VFX/freegame_ani",
-            "cc.ImageAsset",
-            1
-        ],
-        "be354b54-bcd7-490f-afc3-c7f96e5cab68@6c48a": [
-            "spine/VFX/freegame_ani/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "be354b54-bcd7-490f-afc3-c7f96e5cab68@f9941": [
-            "spine/VFX/freegame_ani/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "a61c41f5-5182-45a5-86af-efdad97bb97d": [
-            "spine/VFX/freegame_ani_2",
-            "cc.ImageAsset",
-            1
-        ],
-        "a61c41f5-5182-45a5-86af-efdad97bb97d@6c48a": [
-            "spine/VFX/freegame_ani_2/texture",
-            "cc.Texture2D",
+        "64e8c2de-1680-4670-8611-5b57c91ec2d1": [
+            "共用元件/系統訊息",
+            "cc.Prefab",
             1
         ],
         "a5845cee-37fe-46e8-aed6-df8aea688bed": [
@@ -609,11 +439,6 @@
             "cc.SpriteFrame",
             1
         ],
-        "64e8c2de-1680-4670-8611-5b57c91ec2d1": [
-            "共用元件/系統訊息",
-            "cc.Prefab",
-            1
-        ],
         "e2e325c9-bdf3-4641-909d-4f94c12e3749": [
             "spine/Character/Base",
             "sp.SkeletonData",
@@ -664,6 +489,26 @@
             "cc.Texture2D",
             1
         ],
+        "8f0bbca4-f52d-437e-9c49-945a98608b04": [
+            "spine/Character/Doll-full",
+            "cc.Asset",
+            1
+        ],
+        "a8788329-0fe8-4d58-b400-b960f26fb683": [
+            "spine/Character/Doll-full",
+            "sp.SkeletonData",
+            1
+        ],
+        "405937fb-8c63-4b77-92a8-91064ada3378": [
+            "spine/Character/Doll-full",
+            "cc.ImageAsset",
+            1
+        ],
+        "405937fb-8c63-4b77-92a8-91064ada3378@6c48a": [
+            "spine/Character/Doll-full/texture",
+            "cc.Texture2D",
+            1
+        ],
         "d6013161-7bcf-431c-a5bf-f9fe8b971b9b": [
             "spine/Character/NPC-spine",
             "cc.Asset",
@@ -686,6 +531,66 @@
         ],
         "9dac606a-3dca-4d43-bdda-e36a6bf296d0@f9941": [
             "spine/Character/NPC-spine/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "07b50ed5-2f23-4ba9-8471-f447d0d83b44": [
+            "spine/FG/fg-ticket",
+            "cc.Asset",
+            1
+        ],
+        "32e2c995-7cae-4b27-8015-b5ba5c43835b": [
+            "spine/FG/fg-ticket",
+            "sp.SkeletonData",
+            1
+        ],
+        "e390b34e-eb37-4829-8d3d-82346e3038b2": [
+            "spine/FG/fg-ticket",
+            "cc.ImageAsset",
+            1
+        ],
+        "e390b34e-eb37-4829-8d3d-82346e3038b2@6c48a": [
+            "spine/FG/fg-ticket/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "37eb947a-6432-4cd9-b88e-665e06b3957a": [
+            "spine/Gameclear/gameclear",
+            "cc.Asset",
+            1
+        ],
+        "c02350b3-2860-4b80-bd06-ac37b2c76628": [
+            "spine/Gameclear/gameclear",
+            "sp.SkeletonData",
+            1
+        ],
+        "5c437d19-f251-4cfc-a9bd-8b8e626dbc7f": [
+            "spine/Gameclear/gameclear",
+            "cc.ImageAsset",
+            1
+        ],
+        "5c437d19-f251-4cfc-a9bd-8b8e626dbc7f@6c48a": [
+            "spine/Gameclear/gameclear/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "5c437d19-f251-4cfc-a9bd-8b8e626dbc7f@f9941": [
+            "spine/Gameclear/gameclear/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a": [
+            "spine/Gameclear/gameclear_2",
+            "cc.ImageAsset",
+            1
+        ],
+        "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a@6c48a": [
+            "spine/Gameclear/gameclear_2/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a@f9941": [
+            "spine/Gameclear/gameclear_2/spriteFrame",
             "cc.SpriteFrame",
             1
         ],
@@ -902,6 +807,101 @@
         "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3@f9941": [
             "spine/Symbol/ticket/spriteFrame",
             "cc.SpriteFrame",
+            1
+        ],
+        "744b044c-20b3-4f43-856e-3a3ae300dcd2": [
+            "spine/VFX/BulletHole.atlas",
+            "cc.TextAsset",
+            1
+        ],
+        "e487cb1e-578f-4a9f-be7f-fd42c1b73c2a": [
+            "spine/VFX/BulletHole",
+            "sp.SkeletonData",
+            1
+        ],
+        "b4d90766-453b-47e1-bb5f-e5320f03feaf": [
+            "spine/VFX/BulletHole",
+            "cc.ImageAsset",
+            1
+        ],
+        "b4d90766-453b-47e1-bb5f-e5320f03feaf@6c48a": [
+            "spine/VFX/BulletHole/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "b4d90766-453b-47e1-bb5f-e5320f03feaf@f9941": [
+            "spine/VFX/BulletHole/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "944fc2ba-ff81-415b-9db2-e898f715e6bc": [
+            "spine/VFX/fg-full",
+            "cc.Asset",
+            1
+        ],
+        "a6f529b2-d710-47ab-8257-963e0b2fd429": [
+            "spine/VFX/fg-full",
+            "sp.SkeletonData",
+            1
+        ],
+        "a1f1592b-d582-44d1-bad4-0a561d28e0a9": [
+            "spine/VFX/fg-full",
+            "cc.ImageAsset",
+            1
+        ],
+        "a1f1592b-d582-44d1-bad4-0a561d28e0a9@6c48a": [
+            "spine/VFX/fg-full/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "2352a825-571e-44c7-97e5-62e7269d981b": [
+            "spine/VFX/freegamefire.atlas",
+            "cc.TextAsset",
+            1
+        ],
+        "57244949-1f2a-4c65-91a3-49faec1028d1": [
+            "spine/VFX/freegamefire",
+            "sp.SkeletonData",
+            1
+        ],
+        "e5058b98-5619-4f77-9093-588b31b32f35": [
+            "spine/VFX/freegamefire",
+            "cc.ImageAsset",
+            1
+        ],
+        "e5058b98-5619-4f77-9093-588b31b32f35@6c48a": [
+            "spine/VFX/freegamefire/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "04bdd039-8dad-4ed4-8f6e-426690861960": [
+            "spine/VFX/freegame_ani",
+            "cc.Asset",
+            1
+        ],
+        "be354b54-bcd7-490f-afc3-c7f96e5cab68": [
+            "spine/VFX/freegame_ani",
+            "cc.ImageAsset",
+            1
+        ],
+        "be354b54-bcd7-490f-afc3-c7f96e5cab68@6c48a": [
+            "spine/VFX/freegame_ani/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "be354b54-bcd7-490f-afc3-c7f96e5cab68@f9941": [
+            "spine/VFX/freegame_ani/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "a61c41f5-5182-45a5-86af-efdad97bb97d": [
+            "spine/VFX/freegame_ani_2",
+            "cc.ImageAsset",
+            1
+        ],
+        "a61c41f5-5182-45a5-86af-efdad97bb97d@6c48a": [
+            "spine/VFX/freegame_ani_2/texture",
+            "cc.Texture2D",
             1
         ]
     },
@@ -1201,13 +1201,13 @@
     "versions": {
         "import": [
             "0f7dda360",
-            "0bc75"
+            "cfdd2"
         ],
         "native": [
             "037dfb80-49b2-46e2-b14d-c8fe54af24f7",
             "91eb3",
             "04bdd039-8dad-4ed4-8f6e-426690861960",
-            "dd1d4",
+            "b7043",
             "07b50ed5-2f23-4ba9-8471-f447d0d83b44",
             "12169",
             "09cf891c-faec-4329-b03c-fffbafabfeb7",
@@ -1233,7 +1233,7 @@
             "37518737-47e8-42a0-870b-b01f149d7bbc",
             "f9a76",
             "37eb947a-6432-4cd9-b88e-665e06b3957a",
-            "63f7f",
+            "150cc",
             "3c6bb106-61c3-4bc9-a991-382b783fc2ae",
             "a6cb7",
             "3e05e858-77c3-4c60-b7e9-1f0c28d4546f",
@@ -1265,7 +1265,7 @@
             "5ee9509c-3a95-435b-81cf-d8ccdb75ebdb",
             "b7a6d",
             "5f284f84-b1e1-42e7-a60e-888d89623649",
-            "85c8c",
+            "19bdb",
             "64f3bd2b-9ac1-4482-8d6f-168fb7efc5d3",
             "96f61",
             "78e4b6bb-69ce-4d3e-816f-d083c89c9a33",
@@ -1279,7 +1279,7 @@
             "8dcfec76-db47-4b25-9e35-00dc249226a9",
             "ef3d6",
             "8f0bbca4-f52d-437e-9c49-945a98608b04",
-            "41be1",
+            "2a867",
             "92525b93-0f62-40b1-844b-fe74d330ca83",
             "14be2",
             "93024dca-1c06-4700-a10d-46915903a79a",
