@@ -412,11 +412,6 @@
             "cc.Prefab",
             1
         ],
-        "13efbd4e-0009-4f1b-9051-0f9ae8be9127": [
-            "prefab/SpecialWin300001",
-            "cc.Prefab",
-            1
-        ],
         "546aaff7-b471-4100-b16f-994656544e8f": [
             "prefab/StartFree300001",
             "cc.Prefab",
@@ -614,121 +609,6 @@
         ],
         "da28a511-ebe0-438b-a2d0-a1c3ab9acf9a@f9941": [
             "spine/Gameclear/gameclear_2/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "1097e2d4-57ec-4e6a-aee9-af9f0e3268c8": [
-            "spine/SpecialWin/Jackpot/jackpot",
-            "cc.Asset",
-            1
-        ],
-        "0445c3b0-2ce0-4d29-962d-f969e686616c": [
-            "spine/SpecialWin/Jackpot/jackpot",
-            "sp.SkeletonData",
-            1
-        ],
-        "61fdd22b-92f8-4214-93d9-6ce66951943a": [
-            "spine/SpecialWin/Jackpot/jackpot",
-            "cc.ImageAsset",
-            1
-        ],
-        "61fdd22b-92f8-4214-93d9-6ce66951943a@6c48a": [
-            "spine/SpecialWin/Jackpot/jackpot/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "61fdd22b-92f8-4214-93d9-6ce66951943a@f9941": [
-            "spine/SpecialWin/Jackpot/jackpot/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "661915cf-eec6-41b8-8366-2529efe53f0c": [
-            "spine/SpecialWin/Big pig",
-            "cc.Asset",
-            1
-        ],
-        "d186e893-3a1b-448a-85e0-e58889b4a06a": [
-            "spine/SpecialWin/Big pig",
-            "sp.SkeletonData",
-            1
-        ],
-        "9099670a-02d6-481d-a852-8c13f6fac34d": [
-            "spine/SpecialWin/Big pig",
-            "cc.ImageAsset",
-            1
-        ],
-        "9099670a-02d6-481d-a852-8c13f6fac34d@6c48a": [
-            "spine/SpecialWin/Big pig/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "a5845cee-37fe-46e8-aed6-df8aea688bed": [
-            "spine/SpecialWin/Gold.atlas",
-            "cc.TextAsset",
-            1
-        ],
-        "8ae3ceca-1e83-46a4-8a76-03d07b5644db": [
-            "spine/SpecialWin/Gold",
-            "sp.SkeletonData",
-            1
-        ],
-        "a6cc903f-0688-45b4-8cfc-5c9e4e6ab390": [
-            "spine/SpecialWin/Gold",
-            "cc.ImageAsset",
-            1
-        ],
-        "a6cc903f-0688-45b4-8cfc-5c9e4e6ab390@6c48a": [
-            "spine/SpecialWin/Gold/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "a6cc903f-0688-45b4-8cfc-5c9e4e6ab390@f9941": [
-            "spine/SpecialWin/Gold/spriteFrame",
-            "cc.SpriteFrame",
-            1
-        ],
-        "5f284f84-b1e1-42e7-a60e-888d89623649": [
-            "spine/FG/MoneyVFX",
-            "cc.Asset",
-            1
-        ],
-        "10e63b86-f4a3-49e2-bcd1-75291d84bbe2": [
-            "spine/FG/MoneyVFX",
-            "sp.SkeletonData",
-            1
-        ],
-        "7cb785f6-3cb5-42e6-8f57-71abe8d613e7": [
-            "spine/FG/MoneyVFX",
-            "cc.ImageAsset",
-            1
-        ],
-        "7cb785f6-3cb5-42e6-8f57-71abe8d613e7@6c48a": [
-            "spine/FG/MoneyVFX/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "cc2f519b-1606-466a-89c6-1e438b73314f": [
-            "spine/SpecialWin/win.atlas",
-            "cc.TextAsset",
-            1
-        ],
-        "ae016c62-5e37-416a-8fdc-36faa81bbe23": [
-            "spine/SpecialWin/win",
-            "sp.SkeletonData",
-            1
-        ],
-        "9cd6caa3-0148-4a62-8f1c-1e32c43f84cb": [
-            "spine/SpecialWin/win",
-            "cc.ImageAsset",
-            1
-        ],
-        "9cd6caa3-0148-4a62-8f1c-1e32c43f84cb@6c48a": [
-            "spine/SpecialWin/win/texture",
-            "cc.Texture2D",
-            1
-        ],
-        "9cd6caa3-0148-4a62-8f1c-1e32c43f84cb@f9941": [
-            "spine/SpecialWin/win/spriteFrame",
             "cc.SpriteFrame",
             1
         ],
@@ -1040,6 +920,126 @@
         "a61c41f5-5182-45a5-86af-efdad97bb97d@6c48a": [
             "spine/VFX/freegame_ani_2/texture",
             "cc.Texture2D",
+            1
+        ],
+        "13efbd4e-0009-4f1b-9051-0f9ae8be9127": [
+            "prefab/SpecialWin300001",
+            "cc.Prefab",
+            1
+        ],
+        "5f284f84-b1e1-42e7-a60e-888d89623649": [
+            "spine/FG/MoneyVFX",
+            "cc.Asset",
+            1
+        ],
+        "10e63b86-f4a3-49e2-bcd1-75291d84bbe2": [
+            "spine/FG/MoneyVFX",
+            "sp.SkeletonData",
+            1
+        ],
+        "7cb785f6-3cb5-42e6-8f57-71abe8d613e7": [
+            "spine/FG/MoneyVFX",
+            "cc.ImageAsset",
+            1
+        ],
+        "7cb785f6-3cb5-42e6-8f57-71abe8d613e7@6c48a": [
+            "spine/FG/MoneyVFX/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "661915cf-eec6-41b8-8366-2529efe53f0c": [
+            "spine/SpecialWin/Big pig",
+            "cc.Asset",
+            1
+        ],
+        "d186e893-3a1b-448a-85e0-e58889b4a06a": [
+            "spine/SpecialWin/Big pig",
+            "sp.SkeletonData",
+            1
+        ],
+        "9099670a-02d6-481d-a852-8c13f6fac34d": [
+            "spine/SpecialWin/Big pig",
+            "cc.ImageAsset",
+            1
+        ],
+        "9099670a-02d6-481d-a852-8c13f6fac34d@6c48a": [
+            "spine/SpecialWin/Big pig/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "a5845cee-37fe-46e8-aed6-df8aea688bed": [
+            "spine/SpecialWin/Gold.atlas",
+            "cc.TextAsset",
+            1
+        ],
+        "8ae3ceca-1e83-46a4-8a76-03d07b5644db": [
+            "spine/SpecialWin/Gold",
+            "sp.SkeletonData",
+            1
+        ],
+        "a6cc903f-0688-45b4-8cfc-5c9e4e6ab390": [
+            "spine/SpecialWin/Gold",
+            "cc.ImageAsset",
+            1
+        ],
+        "a6cc903f-0688-45b4-8cfc-5c9e4e6ab390@6c48a": [
+            "spine/SpecialWin/Gold/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "a6cc903f-0688-45b4-8cfc-5c9e4e6ab390@f9941": [
+            "spine/SpecialWin/Gold/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "cc2f519b-1606-466a-89c6-1e438b73314f": [
+            "spine/SpecialWin/win.atlas",
+            "cc.TextAsset",
+            1
+        ],
+        "ae016c62-5e37-416a-8fdc-36faa81bbe23": [
+            "spine/SpecialWin/win",
+            "sp.SkeletonData",
+            1
+        ],
+        "9cd6caa3-0148-4a62-8f1c-1e32c43f84cb": [
+            "spine/SpecialWin/win",
+            "cc.ImageAsset",
+            1
+        ],
+        "9cd6caa3-0148-4a62-8f1c-1e32c43f84cb@6c48a": [
+            "spine/SpecialWin/win/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "9cd6caa3-0148-4a62-8f1c-1e32c43f84cb@f9941": [
+            "spine/SpecialWin/win/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "1097e2d4-57ec-4e6a-aee9-af9f0e3268c8": [
+            "spine/SpecialWin/Jackpot/jackpot",
+            "cc.Asset",
+            1
+        ],
+        "0445c3b0-2ce0-4d29-962d-f969e686616c": [
+            "spine/SpecialWin/Jackpot/jackpot",
+            "sp.SkeletonData",
+            1
+        ],
+        "61fdd22b-92f8-4214-93d9-6ce66951943a": [
+            "spine/SpecialWin/Jackpot/jackpot",
+            "cc.ImageAsset",
+            1
+        ],
+        "61fdd22b-92f8-4214-93d9-6ce66951943a@6c48a": [
+            "spine/SpecialWin/Jackpot/jackpot/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "61fdd22b-92f8-4214-93d9-6ce66951943a@f9941": [
+            "spine/SpecialWin/Jackpot/jackpot/spriteFrame",
+            "cc.SpriteFrame",
             1
         ],
         "24a72e98-da60-45f3-a553-bbda7d80fe2d": [
@@ -1433,7 +1433,7 @@
     "versions": {
         "import": [
             "06701ef69",
-            "e2cf6",
+            "0d8fa",
             "0f109a9c-2f95-4523-8ad9-7b47b939bb69",
             "4a653",
             "0fd96c56-c291-44a7-b39b-181af6559b2a",
@@ -1465,7 +1465,7 @@
             "0d8e2da8-50a1-418a-aa12-3657aa59ffc1",
             "880fa",
             "1097e2d4-57ec-4e6a-aee9-af9f0e3268c8",
-            "95470",
+            "b8150",
             "18e350f5-5ded-43be-a832-4a5f6e64c54e",
             "67e78",
             "1b3ec0c8-0fc6-4e28-85ba-45a25d6da28e",
